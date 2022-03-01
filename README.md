@@ -37,16 +37,17 @@
 			 p {
 			 position:absolute;
 			 background-color:blue;
-             color:rgb(235, 224, 18);
+                         color:rgb(235, 224, 18);
 			 top:515px;
-             font-family: sans serif;
-             font-style:italic;
-             font-size:1em;
-             font-weight:bold;
-             padding:20px;
+                         font-family: sans serif;
+                         font-style:italic;
+                         font-size:1em;
+                         font-weight:bold;
+                         padding:20px;
 			 width:665px;
 			 right:20px;
-             border: 25px ridge gold;
+                         border: 25px ridge gold;
+			 border-radius: 150px 150px;
             			
 			 }
              body{
