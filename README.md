@@ -32,7 +32,7 @@
 			img{
 				position:absolute;
 				border:25px ridge gold;
-				left:25px;
+				left:150px;
 			}
 			 p {
 			 position:absolute;
