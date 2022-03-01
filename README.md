@@ -32,13 +32,13 @@
 			img{
 				position:absolute;
 				border:25px ridge gold;
-				left:25px;
+				left:200px;
 			}
 			 p {
 			 position:absolute;
 			 background-color:blue;
                          color:rgb(235, 224, 18);
-			 top:515px;
+			 top:625px;
                          font-family: sans serif;
                          font-style:italic;
                          font-size:1em;
