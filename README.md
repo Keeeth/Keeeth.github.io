@@ -44,10 +44,10 @@
                          font-size:1em;
                          font-weight:bold;
                          padding:20px;
-			 width:665px;
+			 width:350px;
 			 right:20px;
-                         border: 25px ridge gold;
-			 border-radius: 150px 150px;
+                         border: 6px dotted gold;
+			 border-radius: 250px 250px;
             			
 			 }
              body{
