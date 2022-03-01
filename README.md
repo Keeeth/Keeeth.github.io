@@ -16,7 +16,7 @@
 			font-size:30px;
 			color:yellow;
 			top:350px;
-			left:75px;
+			left:175px;
 			z-index:1;
 			}
 			.explore{
@@ -26,7 +26,7 @@
 				font-size:24px;
 				font-style:bold;
 				top:425px;
-				left:50px;
+				left:150px;
 				z-index:1;
 			}
 			img{
