@@ -44,8 +44,8 @@
                          font-size:1em;
                          font-weight:bold;
                          padding:20px;			
-                         border: 6px dotted gold;
-			 border-radius: 400px 250px;
+                         
+			 
             			
 			 }
              body{
