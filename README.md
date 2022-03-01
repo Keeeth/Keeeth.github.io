@@ -15,7 +15,7 @@
 			position:absolute;
 			font-size:30px;
 			color:yellow;
-			top:300px;
+			top:350px;
 			left:75px;
 			z-index:1;
 			}
@@ -25,7 +25,7 @@
 				font-family:fantasy;
 				font-size:24px;
 				font-style:bold;
-				top:350px;
+				top:425px;
 				left:50px;
 				z-index:1;
 			}
@@ -39,11 +39,11 @@
 			 background-color:blue;
             	         color:rgb(235, 224, 18);
 			 top:550px;
-            	        font-family: fantasy;
-                        font-style:italic;
-                        font-size:1em;
-                        font-weight:bold;
-                        padding:25px;			 
+            	         font-family: sans serif;
+                         font-style:italic;
+                         font-size:.5em;
+                         font-weight:bold;
+                         padding:25px;			 
 			 left:20px;
              
             			
