@@ -15,7 +15,7 @@
 			position:absolute;
 			font-size:30px;
 			color:yellow;
-			top:300px;
+			top:350px;
 			left:75px;
 			z-index:1;
 			}
@@ -25,7 +25,7 @@
 				font-family:fantasy;
 				font-size:24px;
 				font-style:bold;
-				top:350px;
+				top:400px;
 				left:50px;
 				z-index:1;
 			}
@@ -43,11 +43,9 @@
                          font-style:italic;
                          font-size:1em;
                          font-weight:bold;
-                         padding:20px;
-			 width:350px;
-			 right:20px;
+                         padding:20px;			
                          border: 6px dotted gold;
-			 border-radius: 250px 250px;
+			 border-radius: 400px 250px;
             			
 			 }
              body{
