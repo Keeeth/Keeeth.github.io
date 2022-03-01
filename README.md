@@ -17,7 +17,7 @@
 			color:yellow;
 			top:350px;
 			left:200px;
-			z-index:1;
+			
 			}
 			.explore{
 				position:absolute;
@@ -27,7 +27,7 @@
 				font-style:bold;
 				top:400px;
 				left:200px;
-				z-index:1;
+				
 			}
 			img{
 				position:absolute;
@@ -44,7 +44,7 @@
                          font-style:italic;
                          font-size:1em;
                          font-weight:bold;
-                         padding:75px;			
+                        			
                          
 			 
             			
@@ -60,7 +60,7 @@
 		
     </head>
     <body>
-    <div>   <p>St.Thomas is a lively island boasting an impressive reef edge, the perfect place for turtles, lobsters and eels to call home.<strong> Carvel Rock is a must for divers who find themselves on St. John's island</strong>.<em> Often refereed to as a drift dive</em>,<strong> keep an eye out for nurse sharks, squid, octopus and stingrays passing you</strong>. The island of St. Croix offers a variety of canyons, swim-throughs and plunging cliffs decorated with sponges and sea fans.<br>
+    <div>   <p>St.Thomas is a lively island boasting an impressive reef edge, the perfect place for turtles, lobsters and eels to call home.<br><strong> Carvel Rock is a must for divers who find themselves on St. John's island</strong>.</br><em> Often refereed to as a drift dive</em>,<strong> keep an eye out for nurse sharks, squid, octopus and stingrays passing you</strong>. The island of St. Croix offers a variety of canyons, swim-throughs and plunging cliffs decorated with sponges and sea fans.<br>
 
 <br>The diversity of the US Virgin Islands means that divers are sure to find the island that fits their vacation dreams and diving desires.      
   
