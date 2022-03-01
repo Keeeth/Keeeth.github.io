@@ -39,7 +39,7 @@
 			 background-color:blue;
              color:rgb(235, 224, 18);
 			 top:515px;
-             font-family: fantasy;
+             font-family: sans serif;
              font-style:italic;
              font-size:1em;
              font-weight:bold;
@@ -50,7 +50,7 @@
             			
 			 }
              body{
-				background-color:orange;
+				background-color:blue;
 			 }
 			
 			
