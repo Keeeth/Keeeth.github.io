@@ -37,13 +37,13 @@
 			 p {
 			 position:absolute;
 			 background-color:blue;
-             color:rgb(235, 224, 18);
+            	         color:rgb(235, 224, 18);
 			 top:550px;
-             font-family: fantasy;
-             font-style:italic;
-             font-size:1em;
-             font-weight:bold;
-             padding:25px;			 
+            	        font-family: fantasy;
+                        font-style:italic;
+                        font-size:1em;
+                        font-weight:bold;
+                        padding:25px;			 
 			 left:20px;
              
             			
