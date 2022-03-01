@@ -16,7 +16,7 @@
 			font-size:30px;
 			color:yellow;
 			top:350px;
-			left:160px;
+			left:200px;
 			z-index:1;
 			}
 			.explore{
@@ -26,14 +26,14 @@
 				font-size:24px;
 				font-style:bold;
 				top:400px;
-				left:125px;
+				left:200px;
 				z-index:1;
 			}
 			img{
 				position:absolute;
 				border:25px ridge gold;
 				left:275px;
-				z-index:2;
+			
 			}
 			 p {
 			 position:absolute;
@@ -44,7 +44,7 @@
                          font-style:italic;
                          font-size:1em;
                          font-weight:bold;
-                         padding:20px;			
+                         padding:75px;			
                          
 			 
             			
