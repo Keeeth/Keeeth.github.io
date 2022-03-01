@@ -44,12 +44,11 @@
                          font-size:.5em;
                          font-weight:bold;
                          padding:25px;			 
-			 left:20px;
-             
+			 left:20px;             
             			
 			 }
-             body{
-				background-color:blue;
+                   body{
+			background-color:blue;
 			 }
 			
 			
