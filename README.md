@@ -57,13 +57,24 @@
 						
 		</style>
 	    
-	<div class="island">   <p> St Thomas is a lively island boasting an impressive reef edge.</p>
-   <p> The perfect place for sea turtles and lobsters to call home</p>
-   <p> Carvel Rock is a must for divers to explore on St. Johns.</p>
-   <p> Often referred to as a drift dive keep an eye out for sting rays, nurse sharks, octopus 
-   passing by you.</p>
-   <p> The diversity of the US Virgin Islands means that vacationers and divers a like
-	   will find a vacation of their dreams</p> </div>
+	    <div class="island">   <p><strong> St Thomas</strong> is a lively island boasting an impressive reef edge.</p>
+                    <p> The island offers the natural beauty of the islands with a sophisticated and cosmopolitan atmosphere.</p>
+                    <p> The perfect place for sea turtles and lobsters to call home</p>
+                    <p> Carvel Rock is a must for divers to explore on St. Johns.</p>
+                    <p> Often referred to as a drift dive keep an eye out for sting rays, nurse sharks, octopus 
+                    passing by you.</p>
+                    <p> The diversity of the US Virgin Islands means that vacationers and divers a like
+	            will find a vacation of their dreams</p> 	   	  
+	            <p> The currency of the US Virgin Islands is the US Dollar.</p>      
+		    <p>Major credit cards are accepted in almost all - but not all - establishments.</p>
+                    <p>Ask before you make a purchase or order food.</p>	 
+		    <p>ATM machines are located in banks and at other commercial locations.</p>
+		    <p>There is a free-standing ATM machine on the West Indian Company Cruise Ship Dock next to the Welcome Center.</p>	    
+	    
+	    
+	    
+	    
+	    </div>
 	    
 		
     </head>
