@@ -40,13 +40,13 @@
 			 width:30%;
 			 background-color:blue;
             	         color:rgb(235, 224, 18);
-			 margin-left:475px;
+			 margin-left:700px;
             	         font-family: monospace;
                          font-style:italic;
                          font-size:20px;
                          font-weight:bold;
                          border:2px ridge;
-			 padding:10px;
+			 padding:15px;
 			 overflow-y:scroll;             
             			
 			 }
