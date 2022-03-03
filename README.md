@@ -23,8 +23,8 @@
 			}
 			.explore{
 				position:absolute;
-				color:yellow;
-				font-family:fantasy;
+				color:red;
+				font-family:sans serif;
 				font-size:24px;
 				font-style:bold;
 				top:425px;
