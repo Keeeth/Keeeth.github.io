@@ -56,12 +56,12 @@
 			background-color:blue;		
 					
 			}
-			.dive{
-			position:absolute;
-			border:6px dotted white;
+			.dive {
+			position:fixed;
+			border:2px dotted white;
        		        padding:1px;
-      			width:30%;
-			border-radius: 150px 150px;
+      			width:18%;
+			border-radius: 50px 50px;
 			}
 						
 		</style>
