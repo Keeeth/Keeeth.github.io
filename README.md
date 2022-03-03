@@ -61,7 +61,7 @@
 			border:6px dotted white;
        		        padding:1px;
       			width:30%;
-			border-radius: 50px 50px;
+			border-radius: 150px 150px;
 			}
 						
 		</style>
