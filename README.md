@@ -9,7 +9,7 @@
             <li>Hike the terrain</li>
             <li>Find the hidden enclaves</li>
         </ul> </div>
-          <div> <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Virgin_Islands_National_Park.jpg/320px-Virgin_Islands_National_Park.jpg" width = "700" ></div>
+          <div class = "park"> <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Virgin_Islands_National_Park.jpg/320px-Virgin_Islands_National_Park.jpg" width = "700" ></div>
 	 <div class = "dive" >  <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Coral_Bleaching_%2814274360077%29.jpg/320px-Coral_Bleaching_%2814274360077%29.jpg"></div>
         
 		<style>
@@ -31,7 +31,7 @@
 				left:175px;
 				z-index:1;
 			}
-			img{
+			.park{
 				position:absolute;
 				border:25px ridge gold;
 				left:150px;
@@ -57,7 +57,7 @@
 					
 			}
 			.dive{
-			position:fixed;
+			position:absolute;
 			border:6px dotted white;
        		        padding:1px;
       			width:30%;
