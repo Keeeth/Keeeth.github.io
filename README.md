@@ -15,10 +15,10 @@
 		<style>
 		#summer{
 			position:absolute;		
-			font-size:25px;
+			font-size:20px;
 			color:yellow;
 			top:350px;
-			left:150px;
+			left:250px;
 			z-index:1;
 			}
 			.explore{
@@ -28,14 +28,14 @@
 				font-size:24px;
 				font-style:bold;
 				top:425px;
-				left:175px;
+				left:250px;
 				z-index:1;
 			}
 			.park{
 				
 				position:absolute;
 				border:25px ridge gold;
-				left:250px;
+				left:275px;
 			}
 			 .island {
 			 position:fixed;
