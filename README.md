@@ -39,14 +39,14 @@
 			}
 			 .island {
 			 position:fixed;
-			 height:75%;
-			 width:25%;
+			 height:78%;
+			 width:22%;
 			 background-color:blue;
             	         color:rgb(235, 224, 18);
-			 margin-left:475px;
+			 margin-left:525px;
             	         font-family: monospace;
                          font-style:italic;
-                         font-size:20px;
+                         font-size:17px;
                          font-weight:bold;
                          border:2px ridge;
 			 padding:15px;
