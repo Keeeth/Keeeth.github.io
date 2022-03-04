@@ -18,7 +18,7 @@
 			font-size:20px;
 			color:yellow;
 			top:350px;
-			left:250px;
+			left:315px;
 			z-index:1;
 			}
 			.explore{
@@ -28,7 +28,7 @@
 				font-size:24px;
 				font-style:bold;
 				top:425px;
-				left:250px;
+				left:315px;
 				z-index:1;
 			}
 			.park{
@@ -39,8 +39,8 @@
 			}
 			 .island {
 			 position:fixed;
-			 height:70%;
-			 width:30%;
+			 height:65%;
+			 width:35%;
 			 background-color:blue;
             	         color:rgb(235, 224, 18);
 			 margin-left:550px;
