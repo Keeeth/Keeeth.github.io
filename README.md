@@ -15,10 +15,11 @@
 		<style>
 		#summer{
 			position:absolute;
+			width:60%;
 			font-size:30px;
 			color:yellow;
 			top:350px;
-			left:200px;
+			left:350px;
 			z-index:1;
 			}
 			.explore{
@@ -43,7 +44,7 @@
 			 width:30%;
 			 background-color:blue;
             	         color:rgb(235, 224, 18);
-			 margin-left:700px;
+			 margin-left:550px;
             	         font-family: monospace;
                          font-style:italic;
                          font-size:20px;
