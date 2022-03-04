@@ -42,7 +42,7 @@
 			 height:78%;
 			 width:22%;
 			 background-color:blue;
-            	         color:rgb(235, 224, 18);
+            	         color:gold;
 			 margin-left:525px;
             	         font-family: monospace;
                          font-style:italic;
