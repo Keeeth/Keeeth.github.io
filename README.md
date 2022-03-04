@@ -32,13 +32,13 @@
 				z-index:1;
 			}
 			.park{
+				width:50%;
 				position:absolute;
 				border:25px ridge gold;
 				left:150px;
 			}
 			 .island {
 			 position:fixed;
-			 height:70%;
 			 width:30%;
 			 background-color:blue;
             	         color:rgb(235, 224, 18);
