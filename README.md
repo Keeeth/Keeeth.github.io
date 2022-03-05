@@ -39,7 +39,7 @@
 				left:10%;
 			}
 			 .island {
-			 position▶️;
+			 position:auto;
 			 height:25vh;
 			 width:25vh;
 			 background-color:blue;
@@ -50,7 +50,8 @@
                          font-weight:bold;
                          border:2px ridge;
 			 padding:15px;
-			 overflow-y:scroll;             
+			 overflow-y:scroll; 
+			 z-index:1;
             			
 			 }
                    body{
