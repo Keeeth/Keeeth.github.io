@@ -45,11 +45,11 @@
 			 height:20vh;
 			 width:85vh;
 			 background-color:blue;
-            	         color:red;
+            	         color:white;
             	         font-family: "Times New Roman";
                          font-style:italic;
                          font-size:24px;
-                         border:2px solid;
+                         border:2px solid white;
 			 padding:4%;
 			 overflow-y:scroll; 
 			 z-index:0;
