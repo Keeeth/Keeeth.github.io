@@ -29,7 +29,7 @@
 				font-size:24px;
 				font-style:bold;
 				top:425px;
-				left:315px;
+				left:50%;
 				z-index:1;
 			}
 			.park{
