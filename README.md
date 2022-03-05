@@ -41,7 +41,7 @@
 			 .island {
 			 position:absolute;
 			 margin-left:25%;
-			 top:130%;
+			 top:125%;
 			 height:20vh;
 			 width:85vh;
 			 background-color:blue;
@@ -66,7 +66,7 @@
 	    <div class="island">   <p><strong> St Thomas</strong> is a lively island boasting an impressive reef edge.</p>
                     <p> The island offers the natural beauty of the islands with a sophisticated and cosmopolitan atmosphere.</p>
                     <p> The perfect place for sea turtles and lobsters to call home</p>
-                    <p> Carvel Rock is a must for divers to explore on St. Johns.</p>
+		    <p> <strong>Carvel Rock </strong>is a must for divers to explore on St. Johns.</p>
                     <p> Often referred to as a drift dive keep an eye out for sting rays, nurse sharks, octopus 
                     passing by you.</p>
                     <p> The diversity of the US Virgin Islands means that vacationers and divers a like
