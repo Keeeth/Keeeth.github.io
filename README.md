@@ -41,9 +41,9 @@
 			 .island {
 			 position:absolute;
 			 margin-left:20%;
-			 top:120%;
+			 top:115%;
 			 height:30vh;
-			 width:30vh;
+			 width:50vh;
 			 background-color:blue;
             	         color:gold;
             	         font-family: monospace;
