@@ -42,16 +42,16 @@
 			 position:absolute;
 			 margin-left:25%;
 			 top:130%;
-			 height:25vh;
+			 height:20vh;
 			 width:85vh;
 			 background-color:blue;
             	         color:gold;
             	         font-family: "Times New Roman";
                          font-style:italic;
-                         font-size:17px;
+                         font-size:20px;
                          font-weight:bold;
                          border:2px ridge;
-			 padding:10px;
+			 padding:20%;
 			 overflow-y:scroll; 
 			 z-index:0;
             			
