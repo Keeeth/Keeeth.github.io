@@ -18,7 +18,7 @@
 			font-size:30px;
 			color:yellow;
 			top:350px;
-			float-right:50%;
+			text-align:center;
 			z-index:1;
 			}
 			.explore{
@@ -28,7 +28,7 @@
 				font-size:24px;
 				font-style:bold;
 				top:600px;
-				float-right:50%;
+				text-align:center;
 				z-index:1;
 			}
 			.park{
@@ -37,7 +37,7 @@
 				width:90vh;
 				height:90vh;
 				border:25px ridge gold;
-				left:35%;
+				left:10%;
 			}
 			 .island {
 			 position:fixed;
