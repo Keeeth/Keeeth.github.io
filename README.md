@@ -40,10 +40,10 @@
 			}
 			 .island {
 			 position:absolute;
-			 align:center;
-			 top:125%;
-			 height:25vh;
-			 width:25vh;
+			 margin-left:20%;
+			 top:120%;
+			 height:30vh;
+			 width:30vh;
 			 background-color:blue;
             	         color:gold;
             	         font-family: monospace;
