@@ -28,7 +28,6 @@
 				font-size:24px;
 				font-style:bold;
 				top:600px;
-				text-align:center;
 				z-index:1;
 			}
 			.park{
@@ -41,8 +40,8 @@
 			}
 			 .island {
 			 position▶️;
-			 height:78%;
-			 width:22%;
+			 height:70vh;
+			 width:70vh;
 			 background-color:blue;
             	         color:gold;
 			 margin-left:65%;
