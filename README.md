@@ -38,7 +38,7 @@
 				width:100vh;
 				height:100vh;
 				border:25px ridge gold;
-				left:275px;
+				left:25%;
 			}
 			 .island {
 			 position:fixed;
