@@ -40,6 +40,7 @@
 			}
 			 .island {
 			 position:fixed;
+			 top:75%;
 			 height:25vh;
 			 width:25vh;
 			 background-color:blue;
@@ -51,7 +52,7 @@
                          border:2px ridge;
 			 padding:15px;
 			 overflow-y:scroll; 
-			 z-index:1;
+			 z-index:0;
             			
 			 }
                    body{
