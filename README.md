@@ -51,7 +51,7 @@
                          font-size:24px;
                          font-weight:bold;
                          border:2px ridge;
-			 padding:25%;
+			 padding:4%;
 			 overflow-y:scroll; 
 			 z-index:0;
             			
