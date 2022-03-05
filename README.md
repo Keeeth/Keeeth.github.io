@@ -15,7 +15,6 @@
         
 		<style>
 		#summer{
-			position:absolute;		
 			font-size:30px;
 			color:yellow;
 			top:350px;
@@ -23,7 +22,7 @@
 			z-index:1;
 			}
 			.explore{
-				position:absolute;
+			
 				color:red;
 				font-family:sans serif;
 				font-size:24px;
@@ -35,8 +34,8 @@
 			.park{
 				
 				position:absolute;
-				width:80vh;
-				height:80vh;
+				width:90vh;
+				height:90vh;
 				border:25px ridge gold;
 				left:35%;
 			}
