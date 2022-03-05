@@ -42,7 +42,7 @@
 			 position:absolute;
 			 margin-left:20%;
 			 top:115%;
-			 height:30vh;
+			 height:25vh;
 			 width:50vh;
 			 background-color:blue;
             	         color:gold;
