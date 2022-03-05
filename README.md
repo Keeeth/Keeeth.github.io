@@ -43,7 +43,7 @@
 			 margin-left:10%;
 			 top:130%;
 			 height:25vh;
-			 width:60vh;
+			 width:85vh;
 			 background-color:blue;
             	         color:gold;
             	         font-family: monospace;
