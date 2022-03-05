@@ -40,7 +40,7 @@
 			}
 			 .island {
 			 position:absolute;
-			 margin-left:5%;
+			 margin-left:25%;
 			 top:130%;
 			 height:25vh;
 			 width:85vh;
@@ -51,7 +51,7 @@
                          font-size:17px;
                          font-weight:bold;
                          border:2px ridge;
-			 padding:15px;
+			 padding:10px;
 			 overflow-y:scroll; 
 			 z-index:0;
             			
