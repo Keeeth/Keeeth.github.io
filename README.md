@@ -33,8 +33,8 @@
 			.park{
 				
 				position:absolute;
-				width:90vh;
-				height:90vh;
+				width:100vh;
+				height:100vh;
 				border:25px ridge gold;
 				left:10%;
 			}
