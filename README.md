@@ -39,7 +39,7 @@
 				left:10%;
 			}
 			 .island {
-			 position:auto;
+			 position:fixed;
 			 height:25vh;
 			 width:25vh;
 			 background-color:blue;
