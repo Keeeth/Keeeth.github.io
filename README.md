@@ -16,7 +16,7 @@
 		<style>
 		#summer{
 			position:absolute;		
-			font-size:20px;
+			font-size:30px;
 			color:yellow;
 			top:350px;
 			left:315px;
@@ -44,7 +44,7 @@
 			 width:22%;
 			 background-color:blue;
             	         color:gold;
-			 margin-left:80%;
+			 margin-left:65%;
             	         font-family: monospace;
                          font-style:italic;
                          font-size:17px;
