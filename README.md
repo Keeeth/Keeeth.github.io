@@ -45,13 +45,13 @@
 			 height:20vh;
 			 width:85vh;
 			 background-color:blue;
-            	         color:gold;
+            	         color:red;
             	         font-family: "Times New Roman";
                          font-style:italic;
-                         font-size:20px;
+                         font-size:28px;
                          font-weight:bold;
                          border:2px ridge;
-			 padding:20%;
+			 padding:15%;
 			 overflow-y:scroll; 
 			 z-index:0;
             			
