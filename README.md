@@ -44,7 +44,7 @@
 			 width:22%;
 			 background-color:blue;
             	         color:gold;
-			 left:600px;
+			 margin-left:80%;
             	         font-family: monospace;
                          font-style:italic;
                          font-size:17px;
