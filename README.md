@@ -48,10 +48,10 @@
             	         color:red;
             	         font-family: "Times New Roman";
                          font-style:italic;
-                         font-size:28px;
+                         font-size:24px;
                          font-weight:bold;
                          border:2px ridge;
-			 padding:15%;
+			 padding:25%;
 			 overflow-y:scroll; 
 			 z-index:0;
             			
