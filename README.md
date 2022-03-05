@@ -19,7 +19,7 @@
 			font-size:30px;
 			color:yellow;
 			top:350px;
-			left:315px;
+			left:75%;
 			z-index:1;
 			}
 			.explore{
@@ -28,8 +28,8 @@
 				font-family:sans serif;
 				font-size:24px;
 				font-style:bold;
-				top:425px;
-				left:50%;
+				top:600px;
+				left:75%;
 				z-index:1;
 			}
 			.park{
