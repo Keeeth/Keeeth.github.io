@@ -19,7 +19,7 @@
 			font-family:fantasy;
 			color:yellow;
 			top:350px;
-			text-align:400vh;
+			left:200vh;
 			z-index:1;
 			}
 			.explore{
