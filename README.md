@@ -16,7 +16,7 @@
 		<style>
 		#summer{
 			font-size:30px;
-			font-family:sans;
+			font-family:fantasy;
 			color:yellow;
 			top:350px;
 			text-align:400vh;
