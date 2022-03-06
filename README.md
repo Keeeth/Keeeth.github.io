@@ -16,9 +16,10 @@
 		<style>
 		#summer{
 			font-size:30px;
+			font-family:sans;
 			color:yellow;
 			top:350px;
-			text-align:200vh;
+			text-align:400vh;
 			z-index:1;
 			}
 			.explore{
