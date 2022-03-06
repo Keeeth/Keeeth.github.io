@@ -19,7 +19,7 @@
 			font-family:fantasy;
 			color:yellow;
 			top:350px;
-			left:200vh;
+			margin-left:30%;
 			z-index:1;
 			}
 			.explore{
