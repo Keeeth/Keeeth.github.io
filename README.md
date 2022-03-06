@@ -28,6 +28,7 @@
 				font-family:sans serif;
 				font-size:24px;
 				font-style:bold;
+				margin-left:30%;
 				top:600px;
 				z-index:1;
 			}
