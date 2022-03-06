@@ -18,7 +18,7 @@
 			font-size:30px;
 			color:yellow;
 			top:350px;
-			text-align:center;
+			text-align:200vh;
 			z-index:1;
 			}
 			.explore{
