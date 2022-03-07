@@ -89,7 +89,14 @@
     </head>
     <body>
          
+  <script> 
+  var colorEL= document.getElementById("summer");
+  colorEl.style.color = "green";
   
+  
+  
+  </script>
+   
    
   
  
