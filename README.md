@@ -42,10 +42,10 @@
 			}
 			 .island {
 			 position:absolute;
-			 margin-left:0%;
-			 top:150%;
+			 margin-left:5%;
+			 top:175%;
 			 
-			 width:100vh;
+			 width:100%;
 			 background-color:blue;
             	         color:white;
             	         font-family: "Times New Roman";
