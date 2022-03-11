@@ -41,7 +41,7 @@
 				left:10%;
 			}
 			 .island {
-			 position:absolute;
+			 position:relative;
 			 margin-left:5%;
 			 top:175%;
 			 height:60vh;
@@ -51,7 +51,7 @@
             	         font-family: "Times New Roman";
                          font-style:italic;
                          font-size:24px;
-			 border-align:center;
+			 vertical-align:middle;
                          border:2px solid white;
 			 padding:4%;
 			 overflow-y:scroll; 
