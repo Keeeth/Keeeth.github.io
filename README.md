@@ -45,7 +45,7 @@
 			 position:absolute;
 			 margin-left:25%;
 			 top:125%;
-			 height:20vh;
+			 height:15vh;
 			 width:85vh;
 			 background-color:blue;
             	         color:white;
