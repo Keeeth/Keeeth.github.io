@@ -41,11 +41,11 @@
 				left:10%;
 			}
 			 .island {
-			 position:absolute;
+			 position:fixed;
 			 margin-left:0%;
 			 top:150%;
 			 
-			 width= "100vh"
+			 width:100vh;
 			 background-color:blue;
             	         color:white;
             	         font-family: "Times New Roman";
