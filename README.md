@@ -45,7 +45,7 @@
 			 margin-left:10%;
 			 top:180%;
 			 height:40vh;
-			 width:120vh;
+			 width:115vh;
 			 background-color:blue;
             	         color:white;
             	         font-family: "Times New Roman";
