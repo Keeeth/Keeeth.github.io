@@ -25,7 +25,7 @@
 			.explore{
 			
 				color:red;
-				font-family:sans serif;
+				font-family:fantasy;
 				font-size:24px;
 				font-style:bold;
 				margin-left:30%;
@@ -42,10 +42,10 @@
 			}
 			 .island {
 			 position:absolute;
-			 margin-left:25%;
+			 margin-left:0%;
 			 top:150%;
-			 height="50vh"
-			 width= "50vh"
+			 
+			 width= "100vh"
 			 background-color:blue;
             	         color:white;
             	         font-family: "Times New Roman";
