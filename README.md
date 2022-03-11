@@ -45,12 +45,12 @@
 			 margin-left:10%;
 			 top:180%;
 			 height:40vh;
-			 width:115vh;
+			 width:112vh;
 			 background-color:blue;
             	         color:white;
             	         font-family: "Times New Roman";
                          font-style:italic;
-                         font-size:24px;
+                         font-size:27px;
 			 vertical-align:middle;
                          border:2px solid white;
 			 padding:4%;
