@@ -35,7 +35,7 @@
 			.park{
 				
 				position:absolute;
-				width:120vh;
+				width:115vh;
 				height:80vh;
 				border:25px ridge gold;
 				left:10%;
@@ -45,7 +45,7 @@
 			 margin-left:10%;
 			 top:180%;
 			 height:40vh;
-			 width:140vh;
+			 width:120vh;
 			 background-color:blue;
             	         color:white;
             	         font-family: "Times New Roman";
