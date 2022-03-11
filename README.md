@@ -41,10 +41,10 @@
 				left:10%;
 			}
 			 .island {
-			 position:relative;
+			 position:absolute;
 			 margin-left:5%;
-			 top:175%;
-			 height:60vh;
+			 top:180%;
+			 height:40vh;
 			 width:100vh;
 			 background-color:blue;
             	         color:white;
