@@ -50,7 +50,7 @@
             	         color:gold;
             	         font-family: "Times New Roman";
                          font-style:italic;
-                         font-size:27px;
+                         font-size:33px;
 			 vertical-align:middle;
                          border:2px solid white;
 			 padding:4%;
