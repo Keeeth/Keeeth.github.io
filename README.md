@@ -47,7 +47,7 @@
 			 height:40vh;
 			 width:112vh;
 			 background-color:blue;
-            	         color:white;
+            	         color:gold;
             	         font-family: "Times New Roman";
                          font-style:italic;
                          font-size:27px;
