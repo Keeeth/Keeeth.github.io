@@ -81,7 +81,7 @@
                       }
 			
 			h1 {
-                           animation-duration: 3s;
+                           animation-duration: 5s;
                            animation-name: fadeIN;
                            animation-iteration-count: infinite;
                            animation-direction: alternate;
@@ -93,7 +93,7 @@
                         }
 
                         to {
-                            margin-left: 0%;
+                            margin-left: 10%;
                             width: 100%;
                          }
                       }
