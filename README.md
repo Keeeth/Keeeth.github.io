@@ -36,8 +36,8 @@
 				display:flex;
 				justify-content:center;
 				position:absolute;
-				width:105vh;
-				height:80vh;
+				width:100vh;
+				height:70vh;
 				border:25px ridge gold;
 				left:10%;
 			}
@@ -51,7 +51,7 @@
 
 			 top:156%;
 			 height:30vh;
-			 width:100vh;
+			 width:90vh;
 			 background-color:blue;
             	         color:gold;
             	         font-family: "Times New Roman";
