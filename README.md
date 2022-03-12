@@ -80,6 +80,28 @@
                          }
                       }
 			
+			h1 {
+                           animation-duration: 3s;
+                           animation-name: fadeIN;
+                           animation-iteration-count: infinite;
+                           animation-direction: alternate;
+                           }
+			   @keyframes fadeIN {
+                           from {
+                           margin-left: 100%;
+                           width: 300%;
+                        }
+
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                         }
+                      }
+			
+			
+			
+			
+			
 						
 		</style>
 	    
