@@ -62,6 +62,9 @@
 			background-color:blue;		
 					
 			}
+			p {
+                            animation: 3s infinite alternate slidein;
+                        }
 			
 						
 		</style>
