@@ -62,9 +62,23 @@
 			background-color:blue;		
 					
 			}
-			p {
-                            animation: 3s infinite alternate slidein;
+			li {
+                           animation-duration: 3s;
+                           animation-name: slidein;
+                           animation-iteration-count: infinite;
+                           animation-direction: alternate;
+                           }
+			   @keyframes slidein {
+                           from {
+                           margin-left: 100%;
+                           width: 300%;
                         }
+
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                         }
+                      }
 			
 						
 		</style>
