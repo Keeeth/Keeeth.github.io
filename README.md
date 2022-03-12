@@ -40,9 +40,14 @@
 				border:25px ridge gold;
 				left:10%;
 			}
-			 .island {
+	       .island{
 			 position:absolute;
 			 margin-left:10%;
+			 height: 200px;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+
 			 top:176%;
 			 height:40vh;
 			 width:112vh;
@@ -50,9 +55,8 @@
             	         color:gold;
             	         font-family: "Times New Roman";
                          font-style:italic;
-                         font-size:33px;
-			 vertical-align:middle;
-                         border:2px solid white;
+                         font-size:33px; 
+			 border:2px solid white;
 			 padding:4%;
 			 overflow-y:scroll; 
 			 z-index:0;
