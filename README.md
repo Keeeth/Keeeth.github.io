@@ -43,8 +43,8 @@
 	       .island{
 			 position:absolute;
 			 margin-left:10%;
-			 height: 200px;
-                         display: flex;
+			
+                         
                          align-items: center;
                          justify-content: center;
 
