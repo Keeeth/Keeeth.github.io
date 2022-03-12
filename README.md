@@ -41,12 +41,11 @@
 				border:25px ridge gold;
 				left:10%;
 			}
-	       p{	
+	       .island {	
 	
 			                         
                          align-items: center;
                          justify-content: center;
-
 			 top:135%;
 			 height:200px;
 			 width:90vh;
@@ -101,7 +100,7 @@
                          }
                       }
 			p {
-                           animation-duration: 10s;
+                           animation-duration: 20s;
                            animation-name: fadeIN;
                            animation-iteration-count: infinite;
                            animation-direction: alternate;
