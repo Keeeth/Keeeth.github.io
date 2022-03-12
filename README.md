@@ -36,7 +36,7 @@
 				display:flex;
 				justify-content:center;
 				position:absolute;
-				width:100vh;
+				width:90vh;
 				height:70vh;
 				border:25px ridge gold;
 				left:10%;
@@ -49,7 +49,7 @@
                          align-items: center;
                          justify-content: center;
 
-			 top:156%;
+			 top:120%;
 			 height:200px;
 			 width:90vh;
 			 background-color:blue;
