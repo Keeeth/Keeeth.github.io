@@ -42,13 +42,13 @@
 			}
 	       .island{
 			 position:absolute;
-			 margin-left:10%;
+	
 			
                          
                          align-items: center;
                          justify-content: center;
 
-			 top:176%;
+			 top:156%;
 			 height:40vh;
 			 width:112vh;
 			 background-color:blue;
