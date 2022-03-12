@@ -33,7 +33,8 @@
 				z-index:1;
 			}
 			.park{
-				
+				display:flex;
+				justify-content:center;
 				position:absolute;
 				width:115vh;
 				height:80vh;
