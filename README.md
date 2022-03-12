@@ -43,21 +43,17 @@
 			}
 	       .island {	
 	
-			                         
-                         align-items: center;
-                         justify-content: center;
-			 top:135%;
-			 height:200px;
-			 width:90vh;
-			 background-color:blue;
-            	         color:gold;
-            	         font-family: "Times New Roman";
-                         font-style:italic;
-                         font-size:33px; 
-			 border:2px solid white;
-			 padding:4%;
-			 overflow-y:scroll; 
-			 z-index:0;
+			  position:absolute;                   
+                	  top:135%;
+			  height:200px;
+			  background-color:blue;
+            	          color:gold;
+            	          font-family: "Times New Roman";
+                          font-style:italic;
+                          font-size:33px; 
+			  border:2px solid white;
+			  padding:4%;
+			 
             			
 			 }
                    body{
