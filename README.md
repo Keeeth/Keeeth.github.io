@@ -98,30 +98,7 @@
                          }
                       }
 			
-		img {
-                   animation-duration: 3s;
-                   animation-name: slideDown;
-                 }
-                  @keyframes slideDown {
-                 from {
-                 margin-left: 100%;
-                 width: 300%;
-  	     }
-
-  	         75% {
-    			font-size: 300%;
-    		        margin-left: 25%;
-                        width: 150%;
-                    }
-
-                 to {
-                    margin-left: 0%;
-                    width: 100%;
-                   }
-                 }
-			
-			
-			
+		
 						
 		</style>
 	    
