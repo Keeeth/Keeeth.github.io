@@ -36,7 +36,7 @@
 				display:flex;
 				justify-content:center;
 				position:absolute;
-				width:90vh;
+				width:85vh;
 				height:70vh;
 				border:25px ridge gold;
 				left:10%;
