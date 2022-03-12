@@ -51,8 +51,7 @@
             	          font-family: "Times New Roman";
                           font-style:italic;
                           font-size:33px; 
-			  border:2px solid white;
-			  padding:4%;
+			 
 			 
             			
 			 }
@@ -109,7 +108,7 @@
 
                         to {
                             margin-left: 20%;
-                            width: 100%;
+                            width: 150%;
                          }
                       }
 		
