@@ -50,7 +50,7 @@
                          justify-content: center;
 
 			 top:156%;
-			 height:30vh;
+			 height:200px;
 			 width:90vh;
 			 background-color:blue;
             	         color:gold;
