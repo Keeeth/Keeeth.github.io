@@ -41,15 +41,13 @@
 				border:25px ridge gold;
 				left:10%;
 			}
-	       .island{
-			 position:absolute;
+	       p{	
 	
-			
-                         
+			                         
                          align-items: center;
                          justify-content: center;
 
-			 top:120%;
+			 top:135%;
 			 height:200px;
 			 width:90vh;
 			 background-color:blue;
@@ -102,7 +100,23 @@
                             width: 100%;
                          }
                       }
-			
+			p {
+                           animation-duration: 10s;
+                           animation-name: fadeIN;
+                           animation-iteration-count: infinite;
+                           animation-direction: alternate;
+                           }
+			   @keyframes fadeIN {
+                           from {
+                           margin-left: 100%;
+                           width: 300%;
+                        }
+
+                        to {
+                            margin-left: 20%;
+                            width: 100%;
+                         }
+                      }
 		
 						
 		</style>
