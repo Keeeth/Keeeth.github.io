@@ -24,7 +24,7 @@
 			}
 			.explore{
 			
-				color:red;
+				color:gold;
 				font-family:fantasy;
 				font-size:24px;
 				font-style:bold;
