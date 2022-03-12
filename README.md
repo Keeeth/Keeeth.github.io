@@ -36,7 +36,7 @@
 				display:flex;
 				justify-content:center;
 				position:absolute;
-				width:115vh;
+				width:105vh;
 				height:80vh;
 				border:25px ridge gold;
 				left:10%;
@@ -50,8 +50,8 @@
                          justify-content: center;
 
 			 top:156%;
-			 height:40vh;
-			 width:112vh;
+			 height:30vh;
+			 width:100vh;
 			 background-color:blue;
             	         color:gold;
             	         font-family: "Times New Roman";
