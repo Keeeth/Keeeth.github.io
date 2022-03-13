@@ -52,8 +52,12 @@
             	          font-family: "Times New Roman";
                           font-style:italic;
                           font-size:33px;
-			  padding:20%;
-			 
+			  padding:30px;
+			  
+                          border: 6px ridge blue;
+                          margin-right:10px;
+                          margin-left:10px;
+             
 			 
             			
 			 }
@@ -96,7 +100,7 @@
                             width: 100%;
                          }
                       }
-			p {
+			.island{
                            animation-duration: 20s;
                            animation-name: fadeIN;
                            animation-iteration-count: infinite;
