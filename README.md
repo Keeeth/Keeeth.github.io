@@ -46,17 +46,17 @@
 			  position:absolute; 
 			  margin-right:20px;
                 	  top:145%;
-			  height:200px;
+			  height:65%;
 			  background-color:blue;
             	          color:gold;
             	          font-family: "Times New Roman";
                           font-style:italic;
                           font-size:33px;
-			  padding:30px;
-			  
+			  padding:30px;			  
                           border: 6px ridge blue;
                           margin-right:10px;
                           margin-left:10px;
+			  overflow-y:scroll;
              
 			 
             			
