@@ -44,7 +44,7 @@
 	       .island {	
 	
 			  position:absolute; 
-			  margin-right:20px;
+			  width:50%;
                 	  top:145%;
 			  height:65%;
 			  background-color:blue;
@@ -53,9 +53,9 @@
                           font-style:italic;
                           font-size:33px;
 			  padding:30px;			  
-                          border: 6px ridge blue;
-                          margin-right:10px;
-                          margin-left:10px;
+                          border: 8px ridge gold;
+                          margin-right:20px;
+                          margin-left:20px;
 			  overflow-y:scroll;
              
 			 
