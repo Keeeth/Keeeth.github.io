@@ -19,7 +19,7 @@
 			font-family:fantasy;
 			color:yellow;
 			top:350px;
-			margin-left:30%;
+			margin-left:10%;
 			z-index:1;
 			}
 			.explore{
@@ -28,7 +28,7 @@
 				font-family:fantasy;
 				font-size:24px;
 				font-style:bold;
-				margin-left:30%;
+				margin-left:10%;
 				top:600px;
 				z-index:1;
 			}
@@ -68,7 +68,7 @@
                            }
 			   @keyframes slidein {
                            from {
-                           margin-left: 100%;
+                           margin-left: 50%;
                            width: 300%;
                         }
 
@@ -86,7 +86,7 @@
                            }
 			   @keyframes fadeIN {
                            from {
-                           margin-left: 100%;
+                           margin-left: 50%;
                            width: 300%;
                         }
 
@@ -103,12 +103,12 @@
                            }
 			   @keyframes fadeIN {
                            from {
-                           margin-left: 100%;
+                           margin-left: 50%;
                            width: 300%;
                         }
 
                         to {
-                            margin-left:2%;
+                            margin-left:5%;
                             width: 150%;
                          }
                       }
