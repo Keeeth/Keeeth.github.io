@@ -51,7 +51,8 @@
             	          color:gold;
             	          font-family: "Times New Roman";
                           font-style:italic;
-                          font-size:33px; 
+                          font-size:33px;
+			  padding:20%;
 			 
 			 
             			
