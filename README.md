@@ -43,7 +43,8 @@
 			}
 	       .island {	
 	
-			  position:absolute;                   
+			  position:absolute; 
+			  margin-right:20px;
                 	  top:145%;
 			  height:200px;
 			  background-color:blue;
