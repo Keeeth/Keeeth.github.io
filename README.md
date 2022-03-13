@@ -108,7 +108,7 @@
                         }
 
                         to {
-                            margin-left: 20%;
+                            margin-left:2%;
                             width: 150%;
                          }
                       }
