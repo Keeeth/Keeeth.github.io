@@ -45,7 +45,7 @@
 	
 			  position:absolute; 
 			  width:50%;
-                	  top:145%;
+                	  top:135%;
 			  height:65%;
 			  background-color:blue;
             	          color:gold;
