@@ -46,7 +46,7 @@
 			  position:absolute; 
 			  width:600px;
                 	  top:145%;
-			  height:200px;
+			  height:280px;
 			  background-color:blue;
             	          color:gold;
             	          font-family: "Times New Roman";
@@ -114,7 +114,7 @@
 
                         to {
                             margin-right:30%;
-                            width: 170%;
+                            width: 160%;
                          }
                       }
 		
