@@ -113,8 +113,8 @@
                         }
 
                         to {
-                            margin-right:50%;
-                            width: 200%;
+                            margin-right:30%;
+                            width: 170%;
                          }
                       }
 		
