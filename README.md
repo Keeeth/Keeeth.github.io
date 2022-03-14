@@ -45,8 +45,8 @@
 	
 			  position:absolute; 
 			  width:150px;
-                	  top:135%;
-			  height:65%;
+                	  top:140%;
+			  height:100px;
 			  background-color:blue;
             	          color:gold;
             	          font-family: "Times New Roman";
@@ -108,13 +108,13 @@
                            }
 			   @keyframes fadeIN {
                            from {
-                           margin-left: 30%;
+                           margin-right:30%;
                            width: 50%;
                         }
 
                         to {
                             margin-right:35%;
-                            width: 75%;
+                            width: 100%;
                          }
                       }
 		
