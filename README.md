@@ -54,7 +54,7 @@
                           font-size:33px;
 			  padding:30px;			  
                           border: 8px ridge gold;
-                          margin-right:20px;
+                          margin-right:40px;
                           margin-left:20px;
 			  overflow-y:scroll;
              
@@ -108,12 +108,12 @@
                            }
 			   @keyframes fadeIN {
                            from {
-                           margin-left: 50%;
+                           margin-left: 30%;
                            width: 100%;
                         }
 
                         to {
-                            margin-left:5%;
+                            margin-left:0%;
                             width: 75%;
                          }
                       }
