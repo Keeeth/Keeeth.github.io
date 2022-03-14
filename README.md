@@ -44,7 +44,7 @@
 	       .island {	
 	
 			  position:absolute; 
-			  width:50%;
+			  width:150px;
                 	  top:135%;
 			  height:65%;
 			  background-color:blue;
