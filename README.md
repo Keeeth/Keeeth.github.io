@@ -44,9 +44,9 @@
 	       .island {	
 	
 			  position:absolute; 
-			  width:150px;
-                	  top:140%;
-			  height:100px;
+			  width:200px;
+                	  top:145%;
+			  height:200px;
 			  background-color:blue;
             	          color:gold;
             	          font-family: "Times New Roman";
