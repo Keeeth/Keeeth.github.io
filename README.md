@@ -114,7 +114,7 @@
 
                         to {
                             margin-right:50%;
-                            width: 100%;
+                            width: 200%;
                          }
                       }
 		
