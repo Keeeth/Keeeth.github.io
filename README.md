@@ -108,13 +108,13 @@
                            }
 			   @keyframes fadeIN {
                            from {
-                           margin-right:30%;
-                           width: 50%;
+                           margin-right:20%;
+                           width: 60vh;
                         }
 
                         to {
-                            margin-right:30%;
-                            width: 160%;
+                            margin-right:20%;
+                            width: 80vh;
                          }
                       }
 		
