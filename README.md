@@ -65,7 +65,7 @@
 			background-color:blue;		
 					
 			}
-			li {
+			.explore {
                            animation-duration: 3s;
                            animation-name: slidein;
                            animation-iteration-count: infinite;
@@ -83,7 +83,7 @@
                          }
                       }
 			
-			h1 {
+			#summer {
                            animation-duration: 10s;
                            animation-name: fadeIN;
                            animation-iteration-count: infinite;
@@ -92,7 +92,7 @@
 			   @keyframes fadeIN {
                            from {
                            margin-left: 50%;
-                           width: 300%;
+                           width: 200%;
                         }
 
                         to {
