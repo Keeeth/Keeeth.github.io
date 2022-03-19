@@ -34,7 +34,7 @@
 			}
 			.park{
 				display:flex;
-				justify-content:center;
+				justify-content:centervh;
 				position:absolute;
 				width:85vh;
 				height:70vh;
