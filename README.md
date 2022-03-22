@@ -39,7 +39,7 @@
 				width:85vh;
 				height:70vh;
 				border:25px ridge gold;
-				left:10vh;
+				left:20vh;
 			}
 	       .island {	
 	
