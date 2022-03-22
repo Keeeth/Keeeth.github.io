@@ -33,13 +33,13 @@
 				z-index:1;
 			}
 			.park{
-				display:flex;
-				justify-content:centervh;
+				
+				justify-content:center;
 				position:absolute;
 				width:85vh;
 				height:70vh;
 				border:25px ridge gold;
-				left:10%;
+				left:10vh;
 			}
 	       .island {	
 	
