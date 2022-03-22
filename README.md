@@ -74,12 +74,12 @@
 			   @keyframes slidein {
                            from {
                            margin-left: 50%;
-                           width: 300%;
+                           width: 100%;
                         }
 
                         to {
                             margin-left: 0%;
-                            width: 100%;
+                            width: 200%;
                          }
                       }
 			
@@ -92,12 +92,12 @@
 			   @keyframes fadeIN {
                            from {
                            margin-left: 50%;
-                           width: 200%;
+                           width: 100vh;
                         }
 
                         to {
                             margin-left: 20%;
-                            width: 100%;
+                            width: 200vh;
                          }
                       }
 			.island{
