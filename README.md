@@ -96,7 +96,7 @@
                         }
 
                         to {
-                            margin-left: 20%;
+                            margin-left: 70%;
                             width: 200vh;
                          }
                       }
