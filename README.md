@@ -10,7 +10,7 @@
             <li>Hike the terrain</li>
             <li>Find the hidden enclaves</li>
         </ul> </div>
-          <div class = "park"> <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Virgin_Islands_National_Park.jpg/320px-Virgin_Islands_National_Park.jpg" width = "100vh" height = "100vh" align = "center" ></div>
+          <div class = "park"> <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Virgin_Islands_National_Park.jpg/320px-Virgin_Islands_National_Park.jpg" width = "100%" height = "100%" ></div>
 	      
         
 		<style>
@@ -34,7 +34,7 @@
 			}
 			.park{
 				
-				justify-content:center;
+				align:center;
 				position:absolute;
 				width:85vh;
 				height:70vh;
