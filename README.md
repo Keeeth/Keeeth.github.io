@@ -43,7 +43,8 @@
 			}
 	       .island {	
 	
-			  position:absolute; 
+			  position:absolute;
+			  white-space:normal;
 			  width:85vh;
                 	  top:145%;
 			  height:30vh;
