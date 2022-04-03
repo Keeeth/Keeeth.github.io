@@ -146,9 +146,9 @@
     <body>
          
   <script> 
-  var colorEL= document.getElementById("summer");
-  colorEl.style.color = "green";
-  
+  var colorEL= document.getElementById("#summer");
+  colorEl.innerHTML.color = "United States Virgin Islands";
+  colorEl.style.color="red";
   
   
   </script>
