@@ -109,7 +109,7 @@
                            }
 			   @keyframes fadeIN {
                            from {
-                           margin-left:20%;
+                           margin-left:0%;
                            width: 60vh;
                         }
 
