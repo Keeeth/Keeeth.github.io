@@ -46,7 +46,7 @@
 			  position:absolute;
 			  white-space:normal;
 			  width:85vh;
-                	  top:145%;
+                	  top:135%;
 			  height:30vh;
 			  background-color:blue;
             	          color:gold;
