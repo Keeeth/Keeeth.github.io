@@ -114,7 +114,7 @@
                         }
 
                         to {
-                            margin-right:20%;
+                            margin-right:0%;
                             width: 80vh;
                          }
                       }
