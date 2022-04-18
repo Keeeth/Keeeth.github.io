@@ -119,7 +119,7 @@
                          }
                       }
 			
-	   img{
+	   .img{
 			animation-name: fadeInOut, moveLeft300px, bounce;
 			animation-duration: 3s;
 			animation-iteration-count: 1;
