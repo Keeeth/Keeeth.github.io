@@ -119,6 +119,17 @@
                          }
                       }
 		
+			.fade-in-image {
+	 	 	 opacity: 50%;
+		}
+
+			.fade-in-image:hover {
+ 			 opacity:100%;
+ 			 transition:opacity 2s
+		}
+			
+			
+			
 						
 		</style>
 	    
