@@ -118,8 +118,7 @@
                             width: 80vh;
                          }
                       }
-		
-  animation: fadeIn 5s;
+.park: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
   -moz-animation: fadeIn 5s;
   -o-animation: fadeIn 5s;
