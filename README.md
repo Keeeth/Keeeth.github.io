@@ -118,10 +118,12 @@
                             width: 80vh;
                          }
                       }
-
-			animation-.park: fadeInOut, moveLeft300px, bounce;
+			
+	   .park{
+			animation-name: fadeInOut, moveLeft300px, bounce;
 			animation-duration: 3s;
 			animation-iteration-count: 1;
+			}
 
 			
 			
