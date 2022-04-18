@@ -119,11 +119,11 @@
                          }
                       }
 		
-			.fade-in-image {
+			.fade-in-.park {
 	 	 	 opacity: 50%;
 		}
 
-			.fade-in-image:hover {
+			.fade-in-.park:hover {
  			 opacity:100%;
  			 transition:opacity 2s
 		}
