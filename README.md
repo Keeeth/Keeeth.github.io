@@ -148,14 +148,36 @@
             background: #fff;
             box-shadow: 0 0 50px rgba(255, 215, 0, 0.8);
         }
+     /* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+    /* 1. Stack content vertically */
+    .main-content { 
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    
+    /* 2. Shrink image and text box to save vertical space */
+    .park img, .island { 
+        max-height: 20vh; /* Reduced from 25vh to ensure button fits */
+    }
+    
+    /* 3. Reduce font sizes for mobile headers */
+    #summer { font-size: 1.5rem; margin: 5px 0; }
+    .island { padding: 12px; font-size: 0.85rem; }
+    
+    /* 4. Shrink the button slightly for mobile */
+    .buy-button {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+    }
 
-        /* MOBILE ADJUSTMENTS */
-        @media (max-width: 768px) {
-            .main-content { flex-direction: column; gap: 15px; }
-            .park img, .island { max-height: 25vh; }
-            #summer { font-size: 1.6rem; }
-            .island { padding: 15px; font-size: 0.95rem; }
-            .explore ul { gap: 10px; font-size: 0.7rem; }
+    /* 5. Ensure the container doesn't add too much padding */
+    .ticket-container {
+        padding: 10px 0;
+    }
+}
+
+       
         }
     </style>
 </head>
