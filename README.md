@@ -1,175 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	    
-        <meta charset="utf-8">
-        <title>Project: Travel webpage</title>
-		  <h1  id = "summer">United States Virgin Islands</h1> 
-       <div class="explore"> <ul>
-            <li >Explore the wildlife</li>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Travel webpage</title>
+    <style>
+        body {
+            background-color: blue;
+            color: gold;
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden; /* Prevents side-scrolling during animations */
+        }
+
+        #summer {
+            font-size: 2.5rem;
+            font-family: fantasy;
+            color: yellow;
+            text-align: center;
+            animation: fadeIN 5s infinite alternate;
+        }
+
+        .explore {
+            font-family: fantasy;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            animation: slidein 3s infinite alternate;
+        }
+
+        /* Responsive Image Container */
+        .park {
+            max-width: 800px;
+            margin: 20px auto;
+            border: 15px ridge gold;
+            line-height: 0; /* Removes gap under image */
+        }
+
+        .park img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Scrollable Content Box */
+        .island {
+            background-color: rgba(0, 0, 139, 0.8); /* Semi-transparent blue */
+            color: gold;
+            font-size: 1.2rem;
+            padding: 20px;
+            border: 8px ridge gold;
+            max-width: 800px;
+            margin: 20px auto;
+            height: 300px;
+            overflow-y: scroll;
+        }
+
+        /* Animations */
+        @keyframes slidein {
+            from { transform: translateX(0%); }
+            to { transform: translateX(10%); }
+        }
+
+        @keyframes fadeIN {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            #summer { font-size: 1.8rem; }
+            .explore { font-size: 1.1rem; }
+            .park { border-width: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="summer">United States Virgin Islands</h1> 
+
+    <div class="explore"> 
+        <ul>
+            <li>Explore the wildlife</li>
             <li>Hike the terrain</li>
             <li>Find the hidden enclaves</li>
-        </ul> </div>
-          <div class = "park"> <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Virgin_Islands_National_Park.jpg/320px-Virgin_Islands_National_Park.jpg" width = "100%" height = "100%" ></div>
-	      
-        
-		<style>
-		#summer{
-			font-size:30px;
-			font-family:fantasy;
-			color:yellow;
-			top:350px;
-			margin-left:10%;
-			z-index:1;
-			}
-			.explore{
-			
-				color:gold;
-				font-family:fantasy;
-				font-size:24px;
-				font-style:bold;
-				margin-left:10%;
-				top:600px;
-				z-index:1;
-			}
-			.park{
-				
-				align="center"
-				position:absolute;
-				width:85vh;
-				height:70vh;
-				border:25px ridge gold;
-				left:20vh;
-			}
-	       .island {	
-	
-			  position:absolute;
-			  white-space:normal;
-			  width:85vh;
-                	  top:135%;
-			  height:30vh;
-			  background-color:blue;
-            	          color:gold;
-            	          font-family: "Times New Roman";
-                          font-style:italic;
-                          font-size:33px;
-			  padding:30px;			  
-                          border: 8px ridge gold;
-                          margin-right:40px;
-                          margin-left:20px;
-			  overflow-y:scroll;
-             
-			 
-            			
-			 }
-                   body{
-			background-color:blue;		
-					
-			}
-			.explore {
-                           animation-duration: 3s;
-                           animation-name: slidein;
-                           animation-iteration-count: infinite;
-                           animation-direction: alternate;
-                           }
-			   @keyframes slidein {
-                           from {
-                           margin-left: 50%;
-                           width: 100%;
-                        }
+        </ul> 
+    </div>
 
-                        to {
-                            margin-left: 0%;
-                            width: 200%;
-                         }
-                      }
-			
-			#summer {
-                           animation-duration: 10s;
-                           animation-name: fadeIN;
-                           animation-iteration-count: infinite;
-                           animation-direction: alternate;
-                           }
-			   @keyframes fadeIN {
-                           from {
-                           margin-left: 20%;
-                           width: 100vh;
-                        }
+    <div class="park"> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Virgin_Islands_National_Park.jpg/320px-Virgin_Islands_National_Park.jpg" alt="Virgin Islands">
+    </div>
 
-                        to {
-                            margin-right: 0%;
-                            width: 200vh;
-                         }
-                      }
-			.island{
-                           animation-duration: 20s;
-                           animation-name: fadeIN;
-                           animation-iteration-count: infinite;
-                           animation-direction: alternate;
-                           }
-			   @keyframes fadeIN {
-                           from {
-                           margin-left:0%;
-                           width: 60vh;
-                        }
+    <div class="island">   
+        <p><strong>St Thomas</strong> is a lively island boasting an impressive reef edge.</p>
+        <p>The island offers the natural beauty of the islands with a sophisticated and cosmopolitan atmosphere. The perfect place for sea turtles and lobsters to call home.</p>
+        <p><strong>Carvel Rock</strong> is a must for divers to explore on St. Johns. Often referred to as a drift dive, keep an eye out for sting rays, nurse sharks, and octopus passing by you.</p>
+        <p>The diversity of the US Virgin Islands means that vacationers and divers alike will find a vacation of their dreams.</p>
+        <p>The currency is the US Dollar. Major credit cards are accepted in almost all establishments. Ask before you order food. ATM machines are located in banks and commercial locations.</p>
+    </div>
 
-                        to {
-                            margin-right:20%;
-                            width: 80vh;
-                         }
-                      }
-			
-	   .img{
-			animation-name: fadeInOut, moveLeft300px, bounce;
-			animation-duration: 3s;
-			animation-iteration-count: 1;
-			}
-
-			
-			
-			
-						
-		</style>
-	    
-	    <div class="island">   <p><strong> St Thomas</strong> is a lively island boasting an impressive reef edge.
-                    <p> The island offers the natural beauty of the islands with a sophisticated and cosmopolitan atmosphere.
-                     The perfect place for sea turtles and lobsters to call home
-		     <strong>Carvel Rock </strong>is a must for divers to explore on St. Johns.
-                     Often referred to as a drift dive keep an eye out for sting rays, nurse sharks, octopus 
-                     passing by you.
-                     The diversity of the US Virgin Islands means that vacationers and divers a like
-	             will find a vacation of their dreams 	   	  
-	             The currency of the US Virgin Islands is the US Dollar.      
-		     Major credit cards are accepted in almost all - but not all - establishments.
-                     Ask before you make a purchase or order food.	 
-		     ATM machines are located in banks and at other commercial locations.
-		     There is a free-standing ATM machine on the West Indian Company Cruise Ship Dock next to the Welcome Center.</p>	    
-	    
-	    
-	    
-	    
-	    </div>
-	    
-		
-    </head>
-    <body>
-         
-  <script> 
-  var colorEL= document.getElementById("h1");
-  colorEl.innerHTML.color = "United States Virgin Islands";
-  colorEl.style.color="red";
-  
-  
-  </script>
-   
-   
-  
- 
-                 
-      
-        
-       
-        
-    </body>
+</body>
 </html>
-
