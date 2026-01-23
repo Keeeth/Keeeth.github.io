@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Travel webpage</title>
     <style>
-        /* 1. THE FADE-IN ANIMATION */
+        /* 1. THE FADE-IN ANIMATION DEFINITION */
         @keyframes globalFadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from { 
+                opacity: 0; 
+                transform: translateY(10px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
         }
 
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden; 
+            overflow: hidden; /* Prevents global scrolling */
             font-family: "Times New Roman", serif;
             background-color: #000;
-            /* Apply fade to the whole body */
+            /* Applies the fade-in to the entire page content */
             animation: globalFadeIn 1.5s ease-out forwards;
         }
 
-        /* 2. VIDEO BACKGROUND */
+        /* 2. VIDEO BACKGROUND LAYER */
         #video-bg {
             position: fixed;
             top: 0;
@@ -31,7 +37,7 @@
             height: 100%;
             object-fit: cover;
             z-index: -1;
-            filter: brightness(50%); /* Darkened for higher contrast */
+            filter: brightness(50%); /* Darkened so text is easy to read */
         }
 
         body {
@@ -48,15 +54,16 @@
             text-align: center;
             margin: 10px 0;
             text-shadow: 0 0 20px rgba(0,0,0,1);
+            flex: 0 0 auto;
         }
 
-        /* 3. CONTENT AREA */
+        /* 3. CONTENT AREA (Flexbox Layout) */
         .main-content {
             display: flex;
             flex-direction: row; 
             gap: 20px;
             flex: 1;
-            min-height: 0;
+            min-height: 0; /* Important for flex child scrolling */
             align-items: center;
             justify-content: center;
             max-width: 1200px;
@@ -74,11 +81,11 @@
         .park img {
             width: 100%;
             height: auto;
-            max-height: 50vh;
+            max-height: 50vh; /* Keeps image from pushing other items off screen */
             display: block;
         }
 
-        /* 4. GLASSMORPHISM CONTENT BOX */
+        /* 4. GLASSMORPHISM TEXT BOX */
         .island {
             flex: 1;
             background: rgba(0, 0, 50, 0.4); 
@@ -89,7 +96,7 @@
             border-radius: 20px;
             font-size: 1.1rem;
             max-height: 50vh;
-            overflow-y: auto;
+            overflow-y: auto; /* Only the text box scrolls if needed */
             color: #fff;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
@@ -103,6 +110,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 5px;
+            flex: 0 0 auto;
         }
 
         .explore ul {
@@ -118,6 +126,7 @@
         .ticket-container {
             text-align: center;
             padding: 20px 0;
+            flex: 0 0 auto;
         }
 
         .buy-button {
