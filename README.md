@@ -173,12 +173,51 @@
 
     /* 5. Ensure the container doesn't add too much padding */
     .ticket-container {
-        padding: 10px 0;
+        padding: 5px 0;
     }
 }
+/* Container for the sliding images */
+.park {
+    position: relative;
+    flex: 1.2;
+    border: 5px solid gold;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.8);
+    border-radius: 4px;
+    overflow: hidden;
+    height: 300px; /* Fixed height to prevent layout shifting */
+}
 
-       
-        }
+.fade-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: imageFade 12s infinite;
+}
+
+/* Stagger the start time for each image */
+.fade-img:nth-child(1) { animation-delay: 0s; }
+.fade-img:nth-child(2) { animation-delay: 4s; }
+.fade-img:nth-child(3) { animation-delay: 8s; }
+
+@keyframes imageFade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    33% { opacity: 1; }
+    43% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Ensure mobile height is maintained so the button stays visible */
+@media (max-width: 768px) {
+    .park {
+        height: 20vh;
+        min-height: 150px;
+    }
+}        
     </style>
 </head>
 <body>
@@ -198,8 +237,11 @@
     </div>
 
     <div class="main-content">
-        <div class="park"> 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Virgin_Islands_National_Park.jpg/320px-Virgin_Islands_National_Park.jpg" alt="Virgin Islands">
+        <div class="park"> <div class="park"> 
+    <img src="./Keeeth_files/Virgin_Islands_National_Park.jpg" alt="Virgin Islands 1" class="fade-img">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Trunk_Bay_USVI.jpg/640px-Trunk_Bay_USVI.jpg" alt="Virgin Islands 2" class="fade-img">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Maho_Bay_St_John.jpg/640px-Maho_Bay_St_John.jpg" alt="Virgin Islands 3" class="fade-img">
+</div>
         </div>
 
         <div class="island">   
