@@ -74,21 +74,22 @@
             width: 100%; height: 100%;
             object-fit: cover;
             opacity: 0;
-            animation: imageCycle 12s infinite;
+            animation: imageCycle 24s infinite;
         }
 
-        /* Staggered animation for 3 photos */
+        /* Staggered animation for 6 photos */
         .fade-img:nth-child(1) { animation-delay: 0s; }
         .fade-img:nth-child(2) { animation-delay: 4s; }
         .fade-img:nth-child(3) { animation-delay: 8s; }
-        .fade-img:nth-child(4) { animation-delay: 4s; }
-        .fade-img:nth-child(5) { animation-delay: 8s; }
-        .fade-img:nth-child(6) { animation-delay: 4s; }
+        .fade-img:nth-child(4) { animation-delay: 12s; }
+        .fade-img:nth-child(5) { animation-delay: 16s; }
+        .fade-img:nth-child(6) { animation-delay: 20s; }
+        
         @keyframes imageCycle {
             0% { opacity: 0; }
             5% { opacity: 1; }
-            33% { opacity: 1; }
-            38% { opacity: 0; }
+            16% { opacity: 1; }
+            21% { opacity: 0; }
             100% { opacity: 0; }
         }
 
