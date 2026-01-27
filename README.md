@@ -81,7 +81,9 @@
         .fade-img:nth-child(1) { animation-delay: 0s; }
         .fade-img:nth-child(2) { animation-delay: 4s; }
         .fade-img:nth-child(3) { animation-delay: 8s; }
-
+        .fade-img:nth-child(4) { animation-delay: 4s; }
+        .fade-img:nth-child(5) { animation-delay: 8s; }
+        .fade-img:nth-child(6) { animation-delay: 4s; }
         @keyframes imageCycle {
             0% { opacity: 0; }
             5% { opacity: 1; }
