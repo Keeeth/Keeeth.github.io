@@ -40,8 +40,8 @@
         /* COMPACT MUSIC PLAYER */
         .music-container {
             position: fixed;
-            top: 10px;
-            left: 400%;
+            top: 15px;
+            left: 40%;
             transform: translateX(-50%) scale(0.6); /* Smaller to save room */
             z-index: 1000;
             width: 100%;
