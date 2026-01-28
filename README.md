@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Project - US Virgin Islands</title>
     <style>
-        /* ... Keep all your existing CSS here ... */
+        /* Global Entrance Animation */
+        @keyframes globalFadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-        /* ADD THESE TWO UPDATED RULES IN YOUR STYLE TAG */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+            font-family: "Times New Roman", serif;
+            background-color: #000;
+            animation: globalFadeIn 1.5s ease-out forwards;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-sizing: border-box;
+            color: gold;
+        }
+
+        #video-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(40%);
+        }
+
+        /* MUSIC PLAYER */
         .music-container {
             position: fixed;
             top: 10px;
@@ -23,17 +53,94 @@
             font-family: fantasy;
             color: #FFD700;
             text-align: center;
-            margin-top: 180px; /* Added margin so title sits below the music player */
+            margin-top: 170px; /* Space for the music player */
+            margin-bottom: 10px;
             text-shadow: 0 0 15px rgba(0,0,0,1);
         }
 
-        /* Your existing fade-img and @keyframes logic... */
+        .main-content {
+            display: flex;
+            flex-direction: row; 
+            gap: 15px;
+            flex: 1;
+            min-height: 0; 
+            align-items: center;
+            justify-content: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* THE PICTURE FRAME (RESTORED) */
+        .park {
+            flex: 1.2;
+            height: 350px;
+            position: relative;
+            border: 5px solid gold; /* The Frame */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* PHOTO ANIMATION LOGIC */
+        .fade-img {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: imageCycle 24s infinite;
+        }
+
+        /* Staggered animation delays (RESTORED) */
+        .fade-img:nth-child(1) { animation-delay: 0s; }
+        .fade-img:nth-child(2) { animation-delay: 4s; }
+        .fade-img:nth-child(3) { animation-delay: 8s; }
+        .fade-img:nth-child(4) { animation-delay: 12s; }
+        .fade-img:nth-child(5) { animation-delay: 16s; }
+        .fade-img:nth-child(6) { animation-delay: 20s; }
+        
         @keyframes imageCycle {
             0% { opacity: 0; }
-            5% { opacity: 1; }
-            16% { opacity: 1; }
-            21% { opacity: 0; }
+            2% { opacity: 1; }   /* Fade in */
+            17% { opacity: 1; }  /* Stay visible */
+            22% { opacity: 0; }  /* Fade out */
             100% { opacity: 0; }
+        }
+
+        /* THE TEXT BOX */
+        .island {
+            flex: 1;
+            background: rgba(0, 0, 50, 0.5); 
+            backdrop-filter: blur(15px); 
+            padding: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 15px;
+            max-height: 50vh;
+            overflow-y: auto;
+            color: #fff;
+        }
+
+        .ticket-container { text-align: center; padding: 15px 0; }
+
+        .buy-button {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #000;
+            padding: 15px 40px;
+            font-family: fantasy;
+            font-size: 1.3rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 768px) {
+            .main-content { flex-direction: column; gap: 10px; }
+            #summer { font-size: 1.5rem; margin-top: 160px; }
+            .park { width: 95%; height: 25vh; min-height: 180px; }
+            .island { max-height: 25vh; }
         }
     </style>
 </head>
