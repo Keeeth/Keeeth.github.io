@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Project - US Virgin Islands</title>
     <style>
-        /* Global Entrance */
+        /* Global Entrance Animation */
         @keyframes globalFadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -17,7 +17,6 @@
             background-color: #000;
             font-family: "Times New Roman", serif;
             animation: globalFadeIn 1.5s ease-out forwards;
-            /* Allow scrolling so nothing disappears */
             overflow-x: hidden;
             overflow-y: auto; 
         }
@@ -37,12 +36,12 @@
             filter: brightness(35%);
         }
 
-        /* COMPACT MUSIC PLAYER */
+        /* MUSIC PLAYER - Centered for Desktop */
         .music-container {
             position: fixed;
             top: 15px;
-            left: 40%;
-            transform: translateX(-50%) scale(0.6); /* Smaller to save room */
+            left: 50%;
+            transform: translateX(-50%) scale(0.6);
             z-index: 1000;
             width: 100%;
             max-width: 400px;
@@ -51,34 +50,34 @@
 
         header {
             text-align: center;
-            margin-top: 100px; /* Gap for music player */
+            margin-top: 100px; 
             padding: 10px;
         }
 
         #summer {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-family: fantasy;
             color: #FFD700;
             margin: 0;
             text-shadow: 0 0 15px rgba(0,0,0,1);
         }
 
+        /* MAIN LAYOUT - Side-by-Side on Desktop */
         .main-content {
             display: flex;
             flex-direction: row; 
-            gap: 20px;
-            align-items: center;
+            gap: 30px;
+            align-items: flex-start;
             justify-content: center;
             max-width: 1100px;
-            margin: 10px auto;
+            margin: 20px auto;
             padding: 0 20px;
         }
 
-        /* THE PHOTO BOX - FIXED HEIGHT */
+        /* THE PHOTO BOX */
         .park {
-            flex: 1.2;
-            height: 350px;
-            min-height: 300px; /* Forces it to show on desktop */
+            flex: 1;
+            height: 450px; 
             position: relative;
             border: 4px solid gold;
             border-radius: 12px;
@@ -95,7 +94,7 @@
             animation: imageCycle 24s infinite;
         }
 
-        /* Photo Animation Delays */
+        /* Image Delays */
         .fade-img:nth-child(1) { animation-delay: 0s; }
         .fade-img:nth-child(2) { animation-delay: 4s; }
         .fade-img:nth-child(3) { animation-delay: 8s; }
@@ -111,6 +110,7 @@
             100% { opacity: 0; }
         }
 
+        /* THE SCROLLING TEXT BOX */
         .island {
             flex: 1;
             background: rgba(15, 15, 35, 0.85); 
@@ -119,29 +119,17 @@
             border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 15px;
             color: #fff;
-/* SCROLLBAR LOGIC */
-    max-height: 450px; /* Limits the height so it doesn't push the button off-screen */
-    overflow-y: auto;  /* Adds the scrollbar if the text is too long */
-}  
-/* Custom Scrollbar Styling (Optional, makes it look "Premium") */
-.island::-webkit-scrollbar {
-    width: 6px;
-}
-.island::-webkit-scrollbar-thumb {
-    background: gold;
-    border-radius: 10px;
-}
+            height: 390px; /* Fixed height for desktop alignment */
+            overflow-y: auto; 
+        }
 
-
-    .main-content {
-        flex-direction: column;
-        gap: 15px;
-    }
-}        
+        /* Scrollbar Styling */
+        .island::-webkit-scrollbar { width: 6px; }
+        .island::-webkit-scrollbar-thumb { background: gold; border-radius: 10px; }
 
         .ticket-container { 
             text-align: center; 
-            padding: 40px 0 80px 0; 
+            padding: 20px 0 60px 0; 
         }
 
         .buy-button {
@@ -153,12 +141,13 @@
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            display: inline-block;
             cursor: pointer;
             border: none;
+            transition: transform 0.2s;
         }
+        .buy-button:active { transform: scale(0.95); }
 
-        /* THE SUCCESS MESSAGE CSS */
+        /* TOAST MESSAGE */
         #toast {
             visibility: hidden;
             min-width: 250px;
@@ -177,17 +166,26 @@
         @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
         @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
 
-        /* MOBILE FIXES */
+        /* MOBILE RESPONSIVE RULES */
         @media (max-width: 768px) {
-            .main-content { flex-direction: column; }
-            header { margin-top: 128px; }
-            .park { 
-                width: 100%;                 
-                max-height: 300px; /* Forces the pictures to appear */
+            header { margin-top: 130px; }
+            .main-content { 
+                flex-direction: column; 
+                align-items: center;
             }
-            .island {height:auto; width: 100%; box-sizing: border-box; }
+            .park { 
+                width: 100%; 
+                height: 250px; 
+                min-height: 250px; 
+            }
+            .island { 
+                width: 100%; 
+                height: auto; 
+                max-height: 250px; 
+                box-sizing: border-box; 
+            }
+            .music-container { left: 50%; } /* Centers player on mobile */
         }
-    }
     </style>
 </head>
 <body>
