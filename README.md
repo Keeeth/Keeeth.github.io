@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Project - US Virgin Islands</title>
     <style>
-        /* Entrance animation */
+        /* Smooth page entrance */
         @keyframes globalFadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -14,11 +14,11 @@
         html, body {
             margin: 0;
             padding: 0;
-            /* Changed to allow scrolling on small screens */
-            overflow-x: hidden; 
             background-color: #000;
             font-family: "Times New Roman", serif;
             animation: globalFadeIn 1.5s ease-out forwards;
+            /* Allow scrolling on mobile if content is too tall */
+            overflow-x: hidden;
         }
 
         body {
@@ -41,7 +41,7 @@
             position: fixed;
             top: 10px;
             left: 50%;
-            transform: translateX(-50%) scale(0.75); /* Shrinks player size */
+            transform: translateX(-50%) scale(0.7); /* Scale down for better fit */
             z-index: 100;
             width: 100%;
             max-width: 400px;
@@ -53,26 +53,28 @@
             font-family: fantasy;
             color: #FFD700;
             text-align: center;
-            margin-top: 140px; /* Reduced gap */
+            margin-top: 130px; /* Space below music player */
+            margin-bottom: 20px;
             text-shadow: 0 0 15px rgba(0,0,0,1);
         }
 
         .main-content {
             display: flex;
             flex-direction: row; 
-            gap: 15px;
+            gap: 20px;
             align-items: center;
             justify-content: center;
             max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 20px;
+            margin: 0 auto;
+            padding: 0 15px;
+            flex: 1;
         }
 
         .park {
             flex: 1.2;
-            height: 350px;
+            height: 300px;
             position: relative;
-            border: 5px solid gold;
+            border: 4px solid gold;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.8);
@@ -87,7 +89,7 @@
             animation: imageCycle 24s infinite;
         }
 
-        /* Staggered Delays */
+        /* Restored Staggered Animation Delays */
         .fade-img:nth-child(1) { animation-delay: 0s; }
         .fade-img:nth-child(2) { animation-delay: 4s; }
         .fade-img:nth-child(3) { animation-delay: 8s; }
@@ -105,15 +107,19 @@
 
         .island {
             flex: 1;
-            background: rgba(0, 0, 50, 0.5); 
-            backdrop-filter: blur(15px); 
+            background: rgba(0, 0, 50, 0.6); 
+            backdrop-filter: blur(10px); 
             padding: 20px;
             border: 1px solid rgba(255, 215, 0, 0.3);
-            border-radius: 15px;
+            border-radius: 12px;
             color: #fff;
+            font-size: 1rem;
         }
 
-        .ticket-container { text-align: center; padding: 30px 0 50px 0; }
+        .ticket-container { 
+            text-align: center; 
+            padding: 40px 0; 
+        }
 
         .buy-button {
             background: linear-gradient(135deg, #FFD700, #FFA500);
@@ -125,16 +131,21 @@
             border-radius: 50px;
             font-weight: bold;
             display: inline-block;
-            transition: 0.3s;
+            transition: transform 0.2s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
         }
+
+        .buy-button:active { transform: scale(0.95); }
 
         /* MOBILE OPTIMIZATION */
         @media (max-width: 768px) {
-            .main-content { flex-direction: column; margin-top: 10px; }
+            body { overflow-y: auto; } /* Ensure we can scroll to the button */
+            .main-content { flex-direction: column; }
             #summer { font-size: 1.6rem; margin-top: 110px; }
-            .park { width: 100%; height: 220px; }
+            .park { width: 100%; height: 200px; }
             .island { width: 100%; box-sizing: border-box; }
-            .ticket-container { padding-bottom: 80px; }
+            .ticket-container { padding-bottom: 60px; }
+            .music-container { transform: translateX(-50%) scale(0.65); }
         }
     </style>
 </head>
