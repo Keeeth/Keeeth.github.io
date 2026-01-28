@@ -120,7 +120,7 @@
             border-radius: 15px;
             color: #fff;
 /* SCROLLBAR LOGIC */
-    max-height: 300px; /* Limits the height so it doesn't push the button off-screen */
+    max-height: 200px; /* Limits the height so it doesn't push the button off-screen */
     overflow-y: auto;  /* Adds the scrollbar if the text is too long */
 }  
 /* Custom Scrollbar Styling (Optional, makes it look "Premium") */
