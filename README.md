@@ -40,7 +40,7 @@
         .music-container {
             position: fixed;
             top: 30px;
-            left: 90%;
+            left: 30%;
             transform:scale(0.6);
             z-index: 1000;
             width: 100%;
