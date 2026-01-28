@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Project - US Virgin Islands</title>
     <style>
-        /* Smooth page entrance */
+        /* Global Fade-in */
         @keyframes globalFadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -17,8 +17,9 @@
             background-color: #000;
             font-family: "Times New Roman", serif;
             animation: globalFadeIn 1.5s ease-out forwards;
-            /* Allow scrolling on mobile if content is too tall */
             overflow-x: hidden;
+            /* Allow vertical scrolling so the Buy button is reachable */
+            overflow-y: auto; 
         }
 
         body {
@@ -33,28 +34,32 @@
             top: 0; left: 0; width: 100%; height: 100%;
             object-fit: cover;
             z-index: -1;
-            filter: brightness(40%);
+            filter: brightness(35%);
         }
 
-        /* COMPACT MUSIC PLAYER */
+        /* MUSIC PLAYER */
         .music-container {
             position: fixed;
             top: 10px;
             left: 50%;
-            transform: translateX(-50%) scale(0.7); /* Scale down for better fit */
-            z-index: 100;
+            transform: translateX(-50%) scale(0.7);
+            z-index: 1000;
             width: 100%;
             max-width: 400px;
             transform-origin: top;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 120px; /* Space for music player */
+            padding: 10px;
         }
 
         #summer {
             font-size: 2.2rem;
             font-family: fantasy;
             color: #FFD700;
-            text-align: center;
-            margin-top: 130px; /* Space below music player */
-            margin-bottom: 20px;
+            margin: 0;
             text-shadow: 0 0 15px rgba(0,0,0,1);
         }
 
@@ -64,15 +69,17 @@
             gap: 20px;
             align-items: center;
             justify-content: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 15px;
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
             flex: 1;
         }
 
+        /* PHOTO BOX - Crucial for visibility */
         .park {
             flex: 1.2;
-            height: 300px;
+            height: 350px;
+            min-height: 300px; /* Ensures it doesn't vanish */
             position: relative;
             border: 4px solid gold;
             border-radius: 8px;
@@ -89,7 +96,7 @@
             animation: imageCycle 24s infinite;
         }
 
-        /* Restored Staggered Animation Delays */
+        /* Photo Delays */
         .fade-img:nth-child(1) { animation-delay: 0s; }
         .fade-img:nth-child(2) { animation-delay: 4s; }
         .fade-img:nth-child(3) { animation-delay: 8s; }
@@ -107,18 +114,17 @@
 
         .island {
             flex: 1;
-            background: rgba(0, 0, 50, 0.6); 
+            background: rgba(0, 0, 50, 0.7); 
             backdrop-filter: blur(10px); 
             padding: 20px;
             border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 12px;
             color: #fff;
-            font-size: 1rem;
         }
 
         .ticket-container { 
             text-align: center; 
-            padding: 40px 0; 
+            padding: 40px 0 60px 0; 
         }
 
         .buy-button {
@@ -132,19 +138,22 @@
             font-weight: bold;
             display: inline-block;
             transition: transform 0.2s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
 
-        .buy-button:active { transform: scale(0.95); }
+        .buy-button:hover { transform: scale(1.05); }
 
         /* MOBILE OPTIMIZATION */
         @media (max-width: 768px) {
-            body { overflow-y: auto; } /* Ensure we can scroll to the button */
-            .main-content { flex-direction: column; }
-            #summer { font-size: 1.6rem; margin-top: 110px; }
-            .park { width: 100%; height: 200px; }
-            .island { width: 100%; box-sizing: border-box; }
-            .ticket-container { padding-bottom: 60px; }
+            .main-content { flex-direction: column; margin: 10px auto; }
+            #summer { font-size: 1.6rem; }
+            header { margin-top: 100px; }
+            .park { 
+                width: 95%; 
+                height: 220px; 
+                min-height: 220px; /* Forces photos to show */
+            }
+            .island { width: 95%; box-sizing: border-box; }
             .music-container { transform: translateX(-50%) scale(0.65); }
         }
     </style>
@@ -163,7 +172,9 @@
         </iframe>
     </div>
 
-    <h1 id="summer">United States Virgin Islands</h1> 
+    <header>
+        <h1 id="summer">United States Virgin Islands</h1> 
+    </header>
 
     <div class="main-content">
         <div class="park"> 
