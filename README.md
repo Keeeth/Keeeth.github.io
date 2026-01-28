@@ -113,13 +113,31 @@
 
         .island {
             flex: 1;
-            background: rgba(15, 15, 35, 0.8); 
+            background: rgba(15, 15, 35, 0.85); 
             backdrop-filter: blur(10px); 
             padding: 20px;
             border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 15px;
             color: #fff;
-        }
+/* SCROLLBAR LOGIC */
+    max-height: 300px; /* Limits the height so it doesn't push the button off-screen */
+    overflow-y: auto;  /* Adds the scrollbar if the text is too long */
+}  
+/* Custom Scrollbar Styling (Optional, makes it look "Premium") */
+.island::-webkit-scrollbar {
+    width: 6px;
+}
+.island::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 10px;
+}
+
+
+    .main-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+}        
 
         .ticket-container { 
             text-align: center; 
@@ -168,7 +186,7 @@
                 height: 250px; 
                 min-height: 250px !important; /* Forces the pictures to appear */
             }
-            .island { width: 100%; box-sizing: border-box; }
+            .island {max-height: 200px; width: 100%; box-sizing: border-box; }
         }
     </style>
 </head>
