@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Project - US Virgin Islands</title>
     <style>
-        /* Fade-in entrance */
+        /* Global Entrance */
         @keyframes globalFadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -17,8 +17,9 @@
             background-color: #000;
             font-family: "Times New Roman", serif;
             animation: globalFadeIn 1.5s ease-out forwards;
+            /* Allow scrolling so nothing disappears */
             overflow-x: hidden;
-            overflow-y: auto; /* Enables scrolling for the button */
+            overflow-y: auto; 
         }
 
         body {
@@ -39,9 +40,9 @@
         /* COMPACT MUSIC PLAYER */
         .music-container {
             position: fixed;
-            top: 10px;
+            top: 5px;
             left: 50%;
-            transform: translateX(-50%) scale(0.65);
+            transform: translateX(-50%) scale(0.6); /* Smaller to save room */
             z-index: 1000;
             width: 100%;
             max-width: 400px;
@@ -50,12 +51,12 @@
 
         header {
             text-align: center;
-            margin-top: 110px; /* Space below music player */
-            padding: 0 10px;
+            margin-top: 100px; /* Gap for music player */
+            padding: 10px;
         }
 
         #summer {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-family: fantasy;
             color: #FFD700;
             margin: 0;
@@ -69,14 +70,15 @@
             align-items: center;
             justify-content: center;
             max-width: 1100px;
-            margin: 20px auto;
+            margin: 10px auto;
             padding: 0 20px;
         }
 
-        /* PHOTO FRAME */
+        /* THE PHOTO BOX - FIXED HEIGHT */
         .park {
             flex: 1.2;
             height: 350px;
+            min-height: 300px; /* Forces it to show on desktop */
             position: relative;
             border: 4px solid gold;
             border-radius: 12px;
@@ -93,7 +95,7 @@
             animation: imageCycle 24s infinite;
         }
 
-        /* Image timing logic */
+        /* Photo Animation Delays */
         .fade-img:nth-child(1) { animation-delay: 0s; }
         .fade-img:nth-child(2) { animation-delay: 4s; }
         .fade-img:nth-child(3) { animation-delay: 8s; }
@@ -109,47 +111,63 @@
             100% { opacity: 0; }
         }
 
-        /* RESTORED TEXT BOX (The missing div style) */
         .island {
             flex: 1;
-            background: rgba(15, 15, 35, 0.75); /* Darker "glass" for readability */
-            backdrop-filter: blur(12px); 
-            padding: 25px;
+            background: rgba(15, 15, 35, 0.8); 
+            backdrop-filter: blur(10px); 
+            padding: 20px;
             border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 15px;
             color: #fff;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
         }
-
-        .island p { margin-bottom: 15px; line-height: 1.4; }
 
         .ticket-container { 
             text-align: center; 
-            padding: 30px 0 80px 0; /* Bottom padding for mobile browser bars */
+            padding: 40px 0 80px 0; 
         }
 
         .buy-button {
             background: linear-gradient(135deg, #FFD700, #FFA500);
             color: #000;
-            padding: 15px 45px;
+            padding: 15px 40px;
             font-family: fantasy;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
             display: inline-block;
-            transition: 0.3s;
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+            cursor: pointer;
+            border: none;
         }
 
-        .buy-button:hover { transform: scale(1.05); }
+        /* THE SUCCESS MESSAGE CSS */
+        #toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            border-radius: 50px;
+            padding: 16px;
+            position: fixed;
+            z-index: 2000;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+        }
+        #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
+        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
 
         /* MOBILE FIXES */
         @media (max-width: 768px) {
-            .main-content { flex-direction: column; margin-top: 10px; }
-            #summer { font-size: 1.6rem; }
+            .main-content { flex-direction: column; }
             header { margin-top: 90px; }
-            .park { width: 100%; height: 240px; }
+            .park { 
+                width: 100%; 
+                height: 250px; 
+                min-height: 250px !important; /* Forces the pictures to appear */
+            }
             .island { width: 100%; box-sizing: border-box; }
         }
     </style>
@@ -190,8 +208,18 @@
     </div>
 
     <div class="ticket-container">
-        <a href="#" class="buy-button">🎟️ BUY TICKETS NOW</a>
+        <button class="buy-button" onclick="showSuccess()">🎟️ BUY TICKETS NOW</button>
     </div>
+
+    <div id="toast">✅ Ticket Reserved! See you in Paradise!</div>
+
+    <script>
+        function showSuccess() {
+            var x = document.getElementById("toast");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+    </script>
 
 </body>
 </html>
