@@ -114,13 +114,13 @@
         .island {
             flex: 1;
             background: rgba(15, 15, 35, 0.85); 
-            backdrop-filter: blur(10px); 
-            padding: 20px;
+            backdrop-filter: blur(15px); 
+            padding: 30px;
             border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 15px;
             color: #fff;
 /* SCROLLBAR LOGIC */
-    max-height: 200px; /* Limits the height so it doesn't push the button off-screen */
+    max-height: 450px; /* Limits the height so it doesn't push the button off-screen */
     overflow-y: auto;  /* Adds the scrollbar if the text is too long */
 }  
 /* Custom Scrollbar Styling (Optional, makes it look "Premium") */
@@ -180,14 +180,14 @@
         /* MOBILE FIXES */
         @media (max-width: 768px) {
             .main-content { flex-direction: column; }
-            header { margin-top: 90px; }
+            header { margin-top: 128px; }
             .park { 
-                width: 100%; 
-                height: 250px; 
-                min-height: 250px !important; /* Forces the pictures to appear */
+                width: 100%;                 
+                max-height: 300px; /* Forces the pictures to appear */
             }
-            .island {max-height: 200px; width: 100%; box-sizing: border-box; }
+            .island {height:auto; width: 100%; box-sizing: border-box; }
         }
+    }
     </style>
 </head>
 <body>
