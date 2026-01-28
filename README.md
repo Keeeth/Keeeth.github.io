@@ -39,8 +39,8 @@
         /* MUSIC PLAYER - Centered for Desktop */
         .music-container {
             position: fixed;
-            top: 20px;
-            left: 30%;
+            top: 30px;
+            left: 25%;
             transform: translateX(-50%) scale(0.6);
             z-index: 1000;
             width: 100%;
