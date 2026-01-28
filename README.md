@@ -5,35 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Project - US Virgin Islands</title>
     <style>
-        @keyframes globalFadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        /* ... Keep all your existing CSS here ... */
 
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden; 
-            font-family: "Times New Roman", serif;
-            background-color: #000;
-            animation: globalFadeIn 1.5s ease-out forwards;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            box-sizing: border-box;
-            color: gold;
-        }
-
-        #video-bg {
+        /* ADD THESE TWO UPDATED RULES IN YOUR STYLE TAG */
+        .music-container {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            filter: brightness(40%);
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            width: 90%;
+            max-width: 400px;
         }
 
         #summer {
@@ -41,103 +23,17 @@
             font-family: fantasy;
             color: #FFD700;
             text-align: center;
-            margin: 5px 0;
+            margin-top: 180px; /* Added margin so title sits below the music player */
             text-shadow: 0 0 15px rgba(0,0,0,1);
         }
 
-        .main-content {
-            display: flex;
-            flex-direction: row; 
-            gap: 15px;
-            flex: 1;
-            min-height: 0; 
-            align-items: center;
-            justify-content: center;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        /* PHOTO ANIMATION SECTION */
-        .park {
-            flex: 1.2;
-            height: 350px; /* Desktop height */
-            position: relative;
-            border: 5px solid gold;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .fade-img {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            object-fit: cover;
-            opacity: 0;
-            animation: imageCycle 24s infinite;
-        }
-
-        /* Staggered animation for 6 photos */
-        .fade-img:nth-child(1) { animation-delay: 0s; }
-        .fade-img:nth-child(2) { animation-delay: 4s; }
-        .fade-img:nth-child(3) { animation-delay: 8s; }
-        .fade-img:nth-child(4) { animation-delay: 12s; }
-        .fade-img:nth-child(5) { animation-delay: 16s; }
-        .fade-img:nth-child(6) { animation-delay: 20s; }
-        
+        /* Your existing fade-img and @keyframes logic... */
         @keyframes imageCycle {
             0% { opacity: 0; }
             5% { opacity: 1; }
             16% { opacity: 1; }
             21% { opacity: 0; }
             100% { opacity: 0; }
-        }
-
-        .island {
-            flex: 1;
-            background: rgba(0, 0, 50, 0.5); 
-            backdrop-filter: blur(15px); 
-            padding: 20px;
-            border: 1px solid rgba(255, 215, 0, 0.3);
-            border-radius: 15px;
-            max-height: 50vh;
-            overflow-y: auto;
-            color: #fff;
-        }
-
-        .ticket-container { text-align: center; padding: 15px 0; }
-
-        .buy-button {
-            background: linear-gradient(135deg, #FFD700, #FFA500);
-            color: #000;
-            padding: 15px 40px;
-            font-family: fantasy;
-            font-size: 1.3rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            display: inline-block;
-            transition: 0.3s;
-        }
-
-        /* MOBILE FIXES */
-        @media (max-width: 768px) {
-            .main-content { flex-direction: column; gap: 10px; }
-            #summer { font-size: 1.5rem; }
-            
-            /* Shrink photo area to make room for button */
-            .park { 
-                width: 90%; 
-                height: 22vh; /* Use Viewport Height to keep it small */
-                min-height: 160px;
-            }
-            
-            .island { 
-                max-height: 25vh; 
-                font-size: 0.9rem; 
-            }
-
-            .buy-button { padding: 10px 30px; font-size: 1.1rem; }
         }
     </style>
 </head>
@@ -146,6 +42,15 @@
     <video autoplay muted loop playsinline id="video-bg">
         <source src="https://assets.mixkit.co/videos/preview/mixkit-tropical-beach-with-palm-trees-1563-large.mp4" type="video/mp4">
     </video>
+
+    <div class="music-container">
+        <iframe 
+            allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
+            style="width:100%;max-width:660px;overflow:hidden;background:transparent;border-radius:10px;" 
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+            src="https://embed.music.apple.com/us/album/jamming/1469575763?i=1469576116">
+        </iframe>
+    </div>
 
     <h1 id="summer">United States Virgin Islands</h1> 
 
@@ -157,8 +62,9 @@
             <img src="https://images.pexels.com/photos/1618606/pexels-photo-1618606.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img" alt="Sea Turtle 4">
             <img src="https://images.pexels.com/photos/1544376/pexels-photo-1544376.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img" alt="View 5"> 
             <img src="https://images.pexels.com/photos/3320529/pexels-photo-3320529.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img" alt="Paradise 6">          
-            </div>        
-          <div class="island">   
+        </div>        
+        
+        <div class="island">   
             <p><strong>St Thomas</strong><br>A lively island with a sophisticated atmosphere. Perfect for sea turtles and lobsters calling this paradise home.</p>
             <p><strong>Carvel Rock</strong><br>A must for divers on St. Johns. Keep an eye out for sting rays and octopus passing by.</p>
             <p><strong>Travel Info</strong><br>Currency: US Dollar. Major credit cards are widely accepted.</p>
