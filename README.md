@@ -18,13 +18,12 @@
             font-family: "Times New Roman", serif;
             animation: globalFadeIn 1.5s ease-out forwards;
             overflow-x: hidden;
-            overflow-y: auto; 
+            height: 100%;
         }
 
         body {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
             color: gold;
         }
 
@@ -36,38 +35,36 @@
             filter: brightness(35%);
         }
 
-        /* MUSIC PLAYER - Centered for Desktop */
+        /* MUSIC PLAYER - Positioned to cover top-left area */
         .music-container {
             position: fixed;
-            top: 10px;
-            left: 50%;
-            transform:translateX(-50);
+            top: 0;
+            left: 0;
             z-index: 1000;
             width: 100%;
             max-width: 400px;
-            transform-origin: top;
         }
 
         header {
             text-align: center;
-            margin-top: 100px; 
+            margin-top: 160px; /* Space for the music player */
             padding: 10px;
         }
 
         #summer {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-family: fantasy;
             color: #FFD700;
             margin: 0;
             text-shadow: 0 0 15px rgba(0,0,0,1);
         }
 
-        /* MAIN LAYOUT - Side-by-Side on Desktop */
+        /* MAIN LAYOUT - Side-by-Side with Equal Height */
         .main-content {
             display: flex;
             flex-direction: row; 
-            gap: 30px;
-            align-items: flex-start;
+            gap: 20px;
+            align-items: stretch; /* This makes both boxes the same height */
             justify-content: center;
             max-width: 1100px;
             margin: 20px auto;
@@ -76,8 +73,8 @@
 
         /* THE PHOTO BOX */
         .park {
-            flex: 1;
-            height: 450px; 
+            flex: 1.2; /* Slightly wider than text box */
+            height: 400px; 
             position: relative;
             border: 4px solid gold;
             border-radius: 12px;
@@ -115,13 +112,14 @@
             flex: 1;
             background: rgba(15, 15, 35, 0.85); 
             backdrop-filter: blur(15px); 
-            padding: 30px;
+            padding: 20px;
             border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 15px;
             color: #fff;
-            height: 390px; /* Fixed height for desktop alignment */
             overflow-y: auto; 
         }
+
+        .island p { margin-top: 0; font-size: 1.1rem; }
 
         /* Scrollbar Styling */
         .island::-webkit-scrollbar { width: 6px; }
@@ -129,15 +127,15 @@
 
         .ticket-container { 
             text-align: center; 
-            padding: 20px 0 60px 0; 
+            padding: 10px 0 40px 0; 
         }
 
         .buy-button {
             background: linear-gradient(135deg, #FFD700, #FFA500);
             color: #000;
-            padding: 15px 40px;
+            padding: 12px 35px;
             font-family: fantasy;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
@@ -168,23 +166,34 @@
 
         /* MOBILE RESPONSIVE RULES */
         @media (max-width: 768px) {
-            header { margin-top: 130px; }
+            header { margin-top: 155px; padding: 5px; }
+            
+            #summer { font-size: 1.6rem; } /* Smaller font for mobile */
+
             .main-content { 
                 flex-direction: column; 
                 align-items: center;
+                gap: 10px;
+                margin: 10px auto;
             }
+
             .park { 
                 width: 100%; 
-                height: 250px; 
-                min-height: 250px; 
+                height: 180px; /* Reduced height to save screen space */
+                min-height: 180px; 
             }
+
             .island { 
                 width: 100%; 
                 height: auto; 
-                max-height: 250px; 
-                box-sizing: border-box; 
+                max-height: 180px; /* Limit height to prevent scrolling off screen */
+                padding: 15px;
+                font-size: 0.9rem;
             }
-            .music-container { left: 50%; } /* Centers player on mobile */
+
+            .ticket-container { padding: 10px 0 20px 0; }
+            
+            .buy-button { font-size: 1rem; padding: 10px 25px; }
         }
     </style>
 </head>
@@ -196,7 +205,7 @@
 
     <div class="music-container">
         <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
-            style="width:100%;overflow:hidden;background:transparent;border-radius:10px;" 
+            style="width:100%;max-width:400px;overflow:hidden;background:transparent;" 
             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
             src="https://embed.music.apple.com/us/album/jamming/1469575763?i=1469576116">
         </iframe>
