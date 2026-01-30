@@ -53,7 +53,7 @@
 
         #summer {
             font-size: 3rem;
-            font-family: fantasy;
+            font-family: Gotham;
             color: #FFD700;
             margin: 0;
             text-shadow: 0 0 15px rgba(0,0,0,1);
@@ -251,7 +251,7 @@
     if (player && header) {
         // OffsetHeight gets the exact pixel height including padding/borders
         const height = player.offsetHeight;
-        header.style.marginTop = `${height - 40}px`; // The "Lift" happens here
+        header.style.marginTop = `${height - 60}px`; // The "Lift" happens here
     }
 };
 
