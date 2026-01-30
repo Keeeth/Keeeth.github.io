@@ -119,7 +119,7 @@
             overflow-y: auto; 
         }
 
-        .island p { margin-top: 0; font-size: 1.1rem; color: rgba(255, 255, 255, 0.9};
+        .island p { margin-top: 0; font-size: 1.1rem};
 
         /* Scrollbar Styling */
         .island::-webkit-scrollbar { width: 6px; }
