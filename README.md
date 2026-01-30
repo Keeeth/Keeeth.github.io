@@ -251,7 +251,7 @@
     if (player && header) {
         // OffsetHeight gets the exact pixel height including padding/borders
         const height = player.offsetHeight;
-        header.style.marginTop = `${height - 60}px`; // The "Lift" happens here
+        header.style.marginTop = `${height - 70}px`; // The "Lift" happens here
     }
 };
 
