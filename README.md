@@ -52,8 +52,8 @@
         }
 
         #summer {
-            font-size: 3.5rem;
-            font-family: Gotham;
+            font-size: 4.0rem;
+            font-family: Gotham, sans-serif;
             color: #FFD700;
             margin: 0;
             text-shadow: 0 0 15px rgba(0,0,0,1);
