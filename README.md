@@ -42,7 +42,7 @@
             left: 0;
             z-index: 1000;
             width: 100%;
-            max-width: 550px;
+            max-width: 900px;
         }
 
         header {
