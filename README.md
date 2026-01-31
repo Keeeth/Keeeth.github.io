@@ -204,11 +204,15 @@
     </video>
 
     <div class="music-container">
-        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
-            style="width:100%;max-width:400px;overflow:hidden;background:transparent;" 
-            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
-            src="https://embed.music.apple.com/us/album/jamming/1469575763?i=1469576116">
-        </iframe>
+     <iframe id="AmazonMusicEmbedB084CSSJV5" 
+            src="https://music.amazon.com/embed/B084CSSJV5/?id=S8rM51K7F5&marketplaceId=ATVPDKIKX0DER&musicTerritory=US" 
+            width="100%" 
+            height="150px" 
+            style="border:1px solid rgba(255, 215, 0, 0.3);max-width:400px;border-radius:12px;" 
+            allow="autoplay">
+    </iframe>
+        
+      
     </div>
 
     <header>
