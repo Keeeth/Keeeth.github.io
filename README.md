@@ -119,8 +119,16 @@
             overflow-y: auto; 
         }
 
-        .island p { margin-top: 0; font-size: 1.1rem};
-
+        /* NEW: Standout Styles for St Thomas, Carvel Rock, and Travel Info */
+        .island strong {
+            display: block; /* Puts it on its own line above description */
+            color: #FFD700; /* Gold color */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
         /* Scrollbar Styling */
         .island::-webkit-scrollbar { width: 6px; }
         .island::-webkit-scrollbar-thumb { background: gold; border-radius: 10px; }
