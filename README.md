@@ -112,18 +112,11 @@
             flex: 1;
             background: rgba(15, 15, 35, 0.85); 
             backdrop-filter: blur(15px); 
-            padding: 20px;
+            padding: 30px;
             border: 1px solid rgba(255, 215, 0, 0.3);
-            border-radius: 15px;
+            border-radius: 8px;
             color: #fff;
             overflow-y: auto; 
-        }
-       /* UPDATED: Improved spacing between sections */
-        .island p { 
-            margin-top: 0; 
-            margin-bottom: 25px; 
-            font-size: 1.1rem;
-            line-height: 1.6;
         }
        
 
@@ -138,6 +131,14 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         .island p:last-child { margin-bottom: 0; }
+        /* UPDATED: Improved spacing between sections */
+        .island p { 
+            margin: 0; 
+            color: #ccc; 
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+       
         
         /* Scrollbar Styling */
         .island::-webkit-scrollbar { width: 6px; }
