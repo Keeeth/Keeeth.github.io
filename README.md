@@ -193,7 +193,7 @@
             .main-content { 
                 flex-direction: column; 
                 align-items: center;
-                gap: 10px;
+                gap: 5px;
                 margin: 10px auto;
             }
 
