@@ -118,6 +118,14 @@
             color: #fff;
             overflow-y: auto; 
         }
+       /* UPDATED: Improved spacing between sections */
+        .island p { 
+            margin-top: 0; 
+            margin-bottom: 25px; 
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+       
 
         /* NEW: Standout Styles for St Thomas, Carvel Rock, and Travel Info */
         .island strong {
@@ -126,9 +134,11 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-size: 1.3rem;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
+        .island p:last-child { margin-bottom: 0; }
+        
         /* Scrollbar Styling */
         .island::-webkit-scrollbar { width: 6px; }
         .island::-webkit-scrollbar-thumb { background: gold; border-radius: 10px; }
