@@ -109,7 +109,7 @@
         /* THE SCROLLING TEXT BOX */
         .island {
             flex: 1;
-            background: rgba(15, 15, 35, 0.85); 
+            background: rgba(0, 0, 0, 0.9); 
             backdrop-filter: blur(15px); 
             padding: 30px;
             border: 1px solid rgba(255, 215, 0, 0.3);
@@ -127,15 +127,15 @@
             letter-spacing: 0.5px;
             font-size: 1.3rem;
             margin-bottom: 2px;
-            margin-top: 20px;
+            margin-top: 15px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         .island strong:first-child { margin-top: 0; }
         /* UPDATED: Improved spacing between sections */
         .island p { 
             margin-top: 0;
-            margin-bottom: 0;
-            line-height: 1.6;
+            margin-bottom: 20px;
+            line-height: 1.4;
             color: #ccc; 
             
             }
