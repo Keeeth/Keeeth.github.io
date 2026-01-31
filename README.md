@@ -124,7 +124,7 @@
             display: block; /* Puts it on its own line above description */
             color: #FFD700; /* Gold color */
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             font-size: 1.3rem;
             margin-bottom: 5px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
@@ -213,9 +213,9 @@
 
     <div class="music-container">
            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
-            style="width:100%;max-width:500px;overflow:hidden;background:transparent;" 
+            style="width:100%;max-width:550px;overflow:hidden;background:transparent;" 
             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"  
-            src="https://embed.music.apple.com/us/album/jamming/1469575763?i=1469576116">
+            src="https://embed.music.apple.com/us/album/jamming/1469575763?i=1469576116&theme=dark">
         </iframe>
                   </div>
 
