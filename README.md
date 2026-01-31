@@ -73,8 +73,7 @@
 
         /* THE PHOTO BOX */
         .park {
-            flex: 1.2; /* Slightly wider than text box */
-            height: 400px; 
+            flex: 1.2; /* Slightly wider than text box */            
             position: relative;
             border: 4px solid gold;
             border-radius: 12px;
