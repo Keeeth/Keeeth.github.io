@@ -127,17 +127,19 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
             font-size: 1.3rem;
-            margin-bottom: 10px;
+            margin-bottom: 2px;
+            margin-top: 20px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
-        .island p:last-child { margin-bottom: 0; }
+        .island strong:first-child { margin-top: 0; }
         /* UPDATED: Improved spacing between sections */
         .island p { 
-            margin: 0; 
-            color: #ccc; 
-            font-size: 0.95rem;
+            margin-top: 0;
+            margin-bottom: 0;
             line-height: 1.6;
-        }
+            color: #ccc; 
+            
+            }
        
         
         /* Scrollbar Styling */
