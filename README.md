@@ -154,7 +154,7 @@
             background: linear-gradient(135deg, #FFD700, #FFA500);
             color: #000;
             padding: 12px 35px;
-            font-family: fantasy;
+            font-family: Gotham;
             font-size: 1.2rem;
             text-decoration: none;
             border-radius: 50px;
