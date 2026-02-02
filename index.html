@@ -186,41 +186,46 @@
         /* MOBILE RESPONSIVE RULES - FIXED FOR 1 PAGE VIEW */
         @media (max-width: 768px) {
             header { 
-                margin-top: 155px; /* Tightens space under music player */
+                margin-top: 175px; /* Tightens space under music player */
                 padding: 2px; 
             }
-            #summer { font-size: 1.4rem; }
+            #summer { font-size: 1.5rem; }
 
             .main-content { 
-                flex-direction: column; 
-                margin-top: 5px; 
-                gap: 5px; /* Minimal gap to save space */
+              flex-direction: column; 
+                margin-top: 10px; 
+                gap: 10px; 
+                padding: 0 15px;
+                box-sizing: border-box;  
+            }
+            .park, .island, .ticket-container {
+                width: 100%;
+                box-sizing: border-box;
             }
 
             .park { 
-                width: 100%; 
-                height: 130px; /* Slimmer image */
-                min-height: 130px;
+                height: 140px; /* Increased height to fill more screen space */
+                min-height: 140px;
             }
+            
 
             .island { 
-                width: 100%; 
-                padding: 8px 12px; /* Tight padding */
-                height: 160px; /* FIXED HEIGHT TO PREVENT OVERSIZING */
-                max-height: 160px;
+                padding: 10px 15px; /* Tight padding */
+                height: 155px; /* FIXED HEIGHT TO PREVENT OVERSIZING */
+                max-height: 155px;
                 overflow-y: auto; /* Keeps text scrollable inside the box */
             }
             
-            .island p { margin-bottom: 4px; font-size: 0.85rem; line-height: 1.2; }
-            .island strong { font-size: 0.95rem; margin-top: 2px; }
+            .island p { margin-bottom: 4px; font-size: 0.85rem; line-height: 1.3; }
+            .island strong { font-size: 1rem; margin-top: 5px; }
 
             .ticket-container {
-                width: 100%;
-                margin-top: 0;
-                padding: 8px;
+               margin-top: 5px;
+                padding: 15px;
+                border: 2px solid gold;
             }
             
-            .buy-button { padding: 8px 20px; font-size: 0.9rem; }
+            .buy-button { padding: 10px 20px; font-size: 0.95rem; }
             .ticket-container p { display: none; } /* Removes extra text line */
         }
     </style>
