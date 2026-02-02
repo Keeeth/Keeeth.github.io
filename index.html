@@ -233,24 +233,23 @@
             .ticket-container p { display: none; } /* Removes extra text line */
         }
 //* Star Animation Styling - High Visibility */
-        .star {
+   .star {
             position: fixed;
-            background-color: rgba(255, 255, 255, 0.9); /* Bright white */
+            top: -10px;
+            background-color: white;
             border-radius: 50%;
             pointer-events: none;
-            z-index: 1; /* Moves them in front of the video */
-            box-shadow: 0 0 5px white; /* Adds a glow so you can actually see them */
+            z-index: 9999; /* Forces stars to the very front */
+            box-shadow: 0 0 8px 2px white; /* Stronger glow */
             animation: fall linear infinite;
         }
 
         @keyframes fall {
-            0% { transform: translateY(-10vh) scale(0.2); opacity: 0; }
-            20% { opacity: 1; }
-            80% { opacity: 1; }
-            100% { transform: translateY(110vh) scale(1); opacity: 0; }
-        }
-
-
+            0% { transform: translateY(-5vh) scale(0.5); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(105vh) scale(1.2); opacity: 0; }
+        }    
 
 
 
@@ -306,28 +305,25 @@
         }
     </script>
 <script>
-        function createStars() {
+ unction createStars() {
             const body = document.body;
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < 60; i++) { // Increased count to 60
                 const star = document.createElement('div');
                 star.className = 'star';
                 
-                // Randomize size, position, and speed
-                const size = Math.random() * 3 + 'px';
-                star.style.width = size;
-                star.style.height = size;
+                // Randomize size between 3px and 6px for visibility
+                const sizeValue = Math.random() * 3 + 3; 
+                star.style.width = sizeValue + 'px';
+                star.style.height = sizeValue + 'px';
+                
                 star.style.left = Math.random() * 100 + 'vw';
-                
-                const duration = Math.random() * 5 + 5 + 's';
-                star.style.animationDuration = duration;
-                
-                const delay = Math.random() * 10 + 's';
-                star.style.animationDelay = delay;
+                star.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                star.style.animationDelay = (Math.random() * 10) + 's';
 
                 body.appendChild(star);
             }
         }
-        createStars();
+        createStars();    
     </script>
 
 
