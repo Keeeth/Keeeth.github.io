@@ -183,49 +183,46 @@
         #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
         @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
         @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
-
-/* MOBILE RESPONSIVE RULES - FIXED FOR 1 PAGE VIEW */
+        /* MOBILE RESPONSIVE RULES - FIXED FOR 1 PAGE VIEW */
         @media (max-width: 768px) {
             header { 
                 margin-top: 155px; /* Tightens space under music player */
                 padding: 2px; 
             }
-            #summer { font-size: 1.3rem; }
+            #summer { font-size: 1.4rem; }
 
             .main-content { 
                 flex-direction: column; 
                 margin-top: 5px; 
                 gap: 5px; /* Minimal gap to save space */
-                padding: 0 10px; /* Thinner side padding */
             }
 
             .park { 
                 width: 100%; 
-                height: 120px; /* Slimmer image */
-                min-height: 120px;
+                height: 130px; /* Slimmer image */
+                min-height: 130px;
             }
 
             .island { 
                 width: 100%; 
                 padding: 8px 12px; /* Tight padding */
-                height: 140px; /* FIXED HEIGHT TO PREVENT OVERSIZING */
-                max-height: 140px;
+                height: 160px; /* FIXED HEIGHT TO PREVENT OVERSIZING */
+                max-height: 160px;
                 overflow-y: auto; /* Keeps text scrollable inside the box */
             }
             
-            .island p { margin-bottom: 4px; font-size: 0.8rem; line-height: 1.2; }
-            .island strong { font-size: 0.9rem; margin-top: 2px; }
+            .island p { margin-bottom: 4px; font-size: 0.85rem; line-height: 1.2; }
+            .island strong { font-size: 0.95rem; margin-top: 2px; }
 
             .ticket-container {
                 width: 100%;
                 margin-top: 0;
-                padding: 5px;
-                border-width: 1px; /* Thinner border saves vertical pixels */
+                padding: 8px;
             }
             
-            .buy-button { padding: 6px 15px; font-size: 0.85rem; }
+            .buy-button { padding: 8px 20px; font-size: 0.9rem; }
             .ticket-container p { display: none; } /* Removes extra text line */
-       
+        }
     </style>
 </head>
 <body>
