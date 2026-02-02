@@ -261,22 +261,9 @@
             x.className = "show";
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
         }
-    const adjustLayout = () => {
-    const player = document.querySelector('.music-container');
-    const header = document.querySelector('header');
     
-    if (player && header) {
-        // OffsetHeight gets the exact pixel height including padding/borders
-        const height = player.offsetHeight;
-        header.style.marginTop = `${height - 80}px`; // The "Lift" happens here
-    }
-};
 
-// Modern way to handle multiple events
-['load', 'resize'].forEach(evt => window.addEventListener(evt, adjustLayout));
-
-
-        
+       
     </script>
 
 </body>
