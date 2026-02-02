@@ -35,7 +35,6 @@
             filter: brightness(35%);
         }
 
-        /* MUSIC PLAYER - Positioned to cover top-left area */
         .music-container {
             position: fixed;
             top: 0;
@@ -47,7 +46,7 @@
 
         header {
             text-align: center;
-            margin-top: 220px; /* Space for the music player */
+            margin-top: 220px; 
             padding: 10px;
         }
 
@@ -59,26 +58,26 @@
             text-shadow: 0 0 15px rgba(0,0,0,1);
         }
 
-        /* MAIN LAYOUT - Side-by-Side with Equal Height */
+        /* MAIN LAYOUT - Now supports 3 columns on desktop */
         .main-content {
             display: flex;
             flex-direction: row; 
             gap: 20px;
             align-items: stretch;
             justify-content: center;
-            max-width: 1100px;
-            margin: 120px auto 40px auto; /* Changed 80px to 120px for more top space */
+            max-width: 1200px;
+            margin: 80px auto 40px auto;
             padding: 0 20px;
         }
 
-        /* THE PHOTO BOX */
         .park {
-            flex: 1.2; /* Slightly wider than text box */            
+            flex: 1.2;
             position: relative;
             border: 4px solid gold;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            min-height: 300px;
         }
 
         .fade-img {
@@ -90,7 +89,6 @@
             animation: imageCycle 24s infinite;
         }
 
-        /* Image Delays */
         .fade-img:nth-child(1) { animation-delay: 0s; }
         .fade-img:nth-child(2) { animation-delay: 4s; }
         .fade-img:nth-child(3) { animation-delay: 8s; }
@@ -106,7 +104,6 @@
             100% { opacity: 0; }
         }
 
-        /* THE SCROLLING TEXT BOX */
         .island {
             flex: 1;
             background: rgba(0, 0, 0, 0.9); 
@@ -117,12 +114,10 @@
             color: #fff;
             overflow-y: auto; 
         }
-       
 
-        /* NEW: Standout Styles for St Thomas, Carvel Rock, and Travel Info */
         .island strong {
-            display: block; /* Puts it on its own line above description */
-            color: #FFD700; /* Gold color */
+            display: block;
+            color: #FFD700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             font-size: 1.3rem;
@@ -130,42 +125,46 @@
             margin-top: 15px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
-        .island strong:first-child { margin-top: 0; }
-        /* UPDATED: Improved spacing between sections */
+
         .island p { 
             margin-top: 0;
             margin-bottom: 20px;
             line-height: 1.4;
             color: #ccc; 
-            
-            }
-       
-        
-        /* Scrollbar Styling */
-        .island::-webkit-scrollbar { width: 6px; }
-        .island::-webkit-scrollbar-thumb { background: gold; border-radius: 10px; }
+        }
 
-        .ticket-container { 
-            text-align: center; 
-            padding: 10px 0 40px 0; 
+        /* NEW: Ticket Container as a side-by-side box */
+        .ticket-container {
+            flex: 0.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid gold;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
         }
 
         .buy-button {
             background: linear-gradient(135deg, #FFD700, #FFA500);
             color: #000;
-            padding: 12px 35px;
-            font-family: Gotham;
-            font-size: 1.2rem;
+            padding: 15px 25px;
+            font-family: Gotham, sans-serif;
+            font-size: 1.1rem;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
             cursor: pointer;
             border: none;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
         }
-        .buy-button:active { transform: scale(0.95); }
 
-        /* TOAST MESSAGE */
+        .buy-button:active { transform: scale(0.95); }
+        .buy-button:hover { box-shadow: 0 0 20px gold; }
+
         #toast {
             visibility: hidden;
             min-width: 250px;
@@ -180,38 +179,39 @@
             bottom: 30px;
             transform: translateX(-50%);
         }
+
         #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
         @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
         @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
 
         /* MOBILE RESPONSIVE RULES */
         @media (max-width: 768px) {
-    header { 
-             margin-top: 200px; /* Push down on mobile to clear the music player */
-           }
-            
-            #summer { font-size: 1.6rem; } /* Smaller font for mobile */
+            header { margin-top: 180px; }
+            #summer { font-size: 1.8rem; }
 
             .main-content { 
                 flex-direction: column; 
-                margin-top: 40px; /* Space between Title and Boxes on mobile */
+                margin-top: 30px;
             }
 
             .park { 
-               width: 100%; 
-               height: 250px; /* Increased from 180px for a better look */
+                width: 100%; 
+                height: 250px; 
+                min-height: 250px;
             }
 
             .island { 
                 width: 100%; 
-                max-height: none; /* Allow the box to grow with the text */
                 height: auto;
+                max-height: none;
+            }
+
+            .ticket-container {
+                width: 100%;
+                margin-top: 10px;
+                padding: 30px 20px;
             }
         }
-            .ticket-container { padding: 10px 0 20px 0; }
-            
-            .buy-button { font-size: 1rem; padding: 10px 25px; }
-        
     </style>
 </head>
 <body>
@@ -221,12 +221,12 @@
     </video>
 
     <div class="music-container">
-           <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
             style="width:100%;max-width:550px;overflow:hidden;background:transparent;" 
             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"  
             src="https://embed.music.apple.com/us/album/jamming/1469575763?i=1469576116&theme=dark">
         </iframe>
-                  </div>
+    </div>
 
     <header>
         <h1 id="summer">United States Virgin Islands</h1> 
@@ -247,10 +247,11 @@
             <p><strong>Carvel Rock</strong><br>A must for divers on St. Johns. Keep an eye out for sting rays and octopus passing by.</p>
             <p><strong>Travel Info</strong><br>Currency: US Dollar. Major credit cards are widely accepted.</p>
         </div>
-    </div>
 
-    <div class="ticket-container">
-        <button class="buy-button" onclick="showSuccess()">🎟️ BUY TICKETS NOW</button>
+        <div class="ticket-container">
+            <button class="buy-button" onclick="showSuccess()">🎟️ BUY TICKETS NOW</button>
+            <p style="color: gold; margin-top: 15px; font-size: 0.8rem;">Limited Summer Slots Available</p>
+        </div>
     </div>
 
     <div id="toast">✅ Ticket Reserved! See you in Paradise!</div>
@@ -261,9 +262,6 @@
             x.className = "show";
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
         }
-    
-
-       
     </script>
 
 </body>
