@@ -64,10 +64,10 @@
             display: flex;
             flex-direction: row; 
             gap: 20px;
-            align-items: stretch; /* This makes both boxes the same height */
+            align-items: stretch;
             justify-content: center;
             max-width: 1100px;
-            margin: 80px auto  20px auto;
+            margin: 120px auto 40px auto; /* Changed 80px to 120px for more top space */
             padding: 0 20px;
         }
 
@@ -186,31 +186,28 @@
 
         /* MOBILE RESPONSIVE RULES */
         @media (max-width: 768px) {
-            header { margin-top: 155px; padding: 5px; }
+    header { 
+             margin-top: 200px; /* Push down on mobile to clear the music player */
+           }
             
             #summer { font-size: 1.6rem; } /* Smaller font for mobile */
 
             .main-content { 
                 flex-direction: column; 
-                align-items: center;
-                gap: 5px;
-                margin: 10px auto;
+                margin-top: 40px; /* Space between Title and Boxes on mobile */
             }
 
             .park { 
-                width: 100%; 
-                height: 180px; /* Reduced height to save screen space */
-                min-height: 180px; 
+               width: 100%; 
+               height: 250px; /* Increased from 180px for a better look */
             }
 
             .island { 
                 width: 100%; 
-                height: auto; 
-                max-height: 180px; /* Limit height to prevent scrolling off screen */
-                padding: 15px;
-                font-size: 0.9rem;
+                max-height: none; /* Allow the box to grow with the text */
+                height: auto;
             }
-
+        }
             .ticket-container { padding: 10px 0 20px 0; }
             
             .buy-button { font-size: 1rem; padding: 10px 25px; }
