@@ -232,6 +232,28 @@
             .buy-button { padding: 10px 20px; font-size: 0.95rem; }
             .ticket-container p { display: none; } /* Removes extra text line */
         }
+/* Star Animation Styling */
+        .star {
+            position: fixed;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none; /* Allows you to click buttons through stars */
+            z-index: 0; /* Sits behind text but in front of video */
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10vh) scale(0); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(110vh) scale(1); opacity: 0; }
+        }
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -283,6 +305,32 @@
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
         }
     </script>
+<script>
+        function createStars() {
+            const body = document.body;
+            for (let i = 0; i < 50; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // Randomize size, position, and speed
+                const size = Math.random() * 3 + 'px';
+                star.style.width = size;
+                star.style.height = size;
+                star.style.left = Math.random() * 100 + 'vw';
+                
+                const duration = Math.random() * 5 + 5 + 's';
+                star.style.animationDuration = duration;
+                
+                const delay = Math.random() * 10 + 's';
+                star.style.animationDelay = delay;
+
+                body.appendChild(star);
+            }
+        }
+        createStars();
+    </script>
+
+
 
 </body>
 </html>
