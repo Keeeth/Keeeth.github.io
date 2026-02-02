@@ -216,6 +216,7 @@
                 height: 165px; /* FIXED HEIGHT TO PREVENT OVERSIZING */
                 max-height: 165px;
                 overflow-y: auto; /* Keeps text scrollable inside the box */
+                box-sizing: border-box;
             }
             
             .island p { margin-bottom: 5px; font-size: 0.85rem; line-height: 1.2; }
@@ -223,8 +224,9 @@
 
             .ticket-container {
                margin-top: 0;
-                padding: 12px;
-                border: 2px solid gold;
+               padding: 12px;
+               border: 2px solid gold;
+               box-sizing: border-box;
             }
             
             .buy-button { padding: 10px 20px; font-size: 0.95rem; }
