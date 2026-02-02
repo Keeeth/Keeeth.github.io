@@ -183,6 +183,7 @@
         #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
         @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
         @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+        
         /* MOBILE RESPONSIVE RULES - FIXED FOR 1 PAGE VIEW */
         @media (max-width: 768px) {
             header { 
@@ -204,24 +205,25 @@
             }
 
             .park { 
-                height: 140px; /* Increased height to fill more screen space */
-                min-height: 140px;
+                height: 180px; /* Increased height to fill more screen space */
+                min-height: 180px;
+                overflow-y: auto;
             }
             
 
             .island { 
                 padding: 10px 15px; /* Tight padding */
-                height: 155px; /* FIXED HEIGHT TO PREVENT OVERSIZING */
-                max-height: 155px;
+                height: 135px; /* FIXED HEIGHT TO PREVENT OVERSIZING */
+                max-height: 135px;
                 overflow-y: auto; /* Keeps text scrollable inside the box */
             }
             
-            .island p { margin-bottom: 4px; font-size: 0.85rem; line-height: 1.3; }
+            .island p { margin-bottom: 5px; font-size: 0.85rem; line-height: 1.2; }
             .island strong { font-size: 1rem; margin-top: 5px; }
 
             .ticket-container {
-               margin-top: 5px;
-                padding: 15px;
+               margin-top: 0;
+                padding: 12px;
                 border: 2px solid gold;
             }
             
