@@ -255,21 +255,28 @@
             90% { opacity: 1; }
             100% { transform: translateY(105vh) scale(1.2); opacity: 0; }
         }    
-      
-    @media screen and (min-width: 1025px) {
-    h1 {
-        font-size: 3.2rem !important; 
+      @media screen and (min-width: 1025px) {
+    /* 1. Remove all inner space from the top of the page */
+    header {
+        padding-top: 0 !important;
         margin-top: 0 !important;
-        margin-bottom: 5px !important;
     }
 
-    /* Target the correct class and override the 80px top margin */
+    /* 2. Pull the title UP toward the music player */
+    h1 {
+        font-size: 3.2rem !important; 
+        margin-top: -40px !important; /* This pulls it closer to the widget */
+        margin-bottom: 10px !important;
+    }
+
+    /* 3. Adjust boxes so they don't overlap the now-higher title */
     .main-content { 
-        margin-top: -25px !important; /* Forces the boxes up over the header area */
+        margin-top: -40px !important; /* Adjusted to sit under the higher h1 */
         position: relative;
         z-index: 10;
     }
 }
+    
    
         
 
