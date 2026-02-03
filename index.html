@@ -255,12 +255,22 @@
             90% { opacity: 1; }
             100% { transform: translateY(105vh) scale(1.2); opacity: 0; }
         }    
-        /* DESKTOP/LAPTOP FIX ONLY */
-        @media screen and (min-width: 1025px) {
-            .container-class-name { 
-                margin-top: -60px; /* Keeps the 3 boxes high on computers */
-            }
-        }
+       /* Targeted adjustment for Desktop/Laptop */
+@media screen and (min-width: 1025px) {
+    /* 1. Shrink the header vertical space */
+    header {
+        padding-top: 20px !important;
+        padding-bottom: 0px !important;
+    }
+
+    /* 2. Pull the boxes up even higher */
+    .container-class-name { 
+        margin-top: -120px !important; /* Doubled the lift */
+        position: relative;
+        z-index: 10;
+    }
+}
+        
 
 
     </style>
