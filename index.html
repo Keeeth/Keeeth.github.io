@@ -255,28 +255,28 @@
             90% { opacity: 1; }
             100% { transform: translateY(105vh) scale(1.2); opacity: 0; }
         }    
-      /* Optimized Desktop/Laptop Lift */
-@media screen and (min-width: 1025px) {
-    /* 1. Shrink the main title so it doesn't hog the top */
+       @media screen and (min-width: 1025px) {
+    /* 1. Force the header to stay small */
+    header {
+        max-height: 180px !important; /* Limits how much room the top can take */
+        padding-top: 5px !important;
+        margin-bottom: 0 !important;
+    }
+    @media screen and (min-width: 1025px) {
     h1 {
         font-size: 3.2rem !important; 
-        margin-top: 0px !important;
+        margin-top: 0 !important;
         margin-bottom: 5px !important;
     }
 
-    /* 2. Remove the extra "air" around the Jamming widget and title */
-    header {
-        padding-top: 5px !important;
-        padding-bottom: 0px !important;
-    }
-
-    /* 3. Pull the 3 boxes up to meet the title */
-    .container-class-name { 
-        margin-top: -115px !important; 
+    /* Target the correct class and override the 80px top margin */
+    .main-content { 
+        margin-top: -150px !important; /* Forces the boxes up over the header area */
         position: relative;
         z-index: 10;
     }
 }
+   
         
 
     </style>
