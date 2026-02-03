@@ -255,6 +255,24 @@
             90% { opacity: 1; }
             100% { transform: translateY(105vh) scale(1.2); opacity: 0; }
         }    
+     /* Tablet / iPad Specific Adjustment */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem; /* Shrinks the text size */
+        margin-bottom: 10px; /* Reduces the gap below the title */
+    }
+
+    header {
+        padding: 20px 0; /* Tightens the overall header height */
+    }
+
+    /* If you have a subtitle or description in the header */
+    header p {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+}
+
 
     </style>
 </head>
