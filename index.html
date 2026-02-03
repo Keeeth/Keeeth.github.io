@@ -17,9 +17,12 @@
             background-color: #000;
             font-family: "Times New Roman", serif;
             animation: globalFadeIn 1.5s ease-out forwards;
-            min-height: 100vh;  /* Ensures background covers the whole screen */
-            width: 100%;            
-            position: relative; 
+            
+            /* The Scrollbar Fix */
+            height: 100vh;       /* Fixes height to exactly the screen size */
+            width: 100vw;        /* Fixes width to exactly the screen size */
+            overflow: hidden;    /* Clips stars that fall past the edge */
+            position: fixed;     /* Prevents the 'bounce' or 'wiggle' on desktop */
         }
 
         body {
