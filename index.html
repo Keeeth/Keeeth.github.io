@@ -3,96 +3,91 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Project - US Virgin Islands</title>
+    <title>Travel Project - Island Getaways</title>
     <style>
-        /* Global Entrance Animation */
+        /* GLOBAL ENTRANCE & RESET */
         @keyframes globalFadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         html, body {
-           margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             background-color: #000;
             font-family: "Times New Roman", serif;
             animation: globalFadeIn 1.5s ease-out forwards;
-            
-            /* The Scrollbar Fix */
-            height: 100vh;       /* Fixes height to exactly the screen size */
-            width: 100vw;        /* Fixes width to exactly the screen size */
-            overflow: hidden;    /* Clips stars that fall past the edge */
-            position: fixed;     /* Prevents the 'bounce' or 'wiggle' on desktop */
+            height: 100vh; width: 100vw;
+            overflow: hidden; position: fixed;
         }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            color: gold;
-        }
+        body { display: flex; flex-direction: column; color: gold; }
 
-        #video-bg {
+        /* PAGE 1: MALDIVES SPLASH SCREEN (New Adjustment) */
+        #maldives-splash {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            filter: brightness(35%);
+            background: #000; z-index: 10002; /* Above everything */
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            transition: opacity 1.5s ease-in-out, visibility 1.5s;
+        }
+
+        #maldives-splash img {
+            position: absolute; width: 100%; height: 100%;
+            object-fit: cover; filter: brightness(60%);
+        }
+
+        #maldives-splash .content {
+            position: relative; z-index: 10003;
+            text-align: center; color: #FFD700;
+            text-shadow: 0 0 20px rgba(0,0,0,1);
+            padding: 20px;
+        }
+
+        #maldives-splash h2 {
+            font-size: clamp(2.5rem, 10vw, 5rem);
+            font-family: 'Poppins', sans-serif; margin: 0;
+            letter-spacing: 5px;
+        }
+
+        .hidden-splash { opacity: 0; visibility: hidden; pointer-events: none; }
+
+        /* PAGE 2: EXISTING ELEMENTS */
+        #video-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover; z-index: -1; filter: brightness(35%);
         }
 
         .music-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            width: 100%;
-            max-width: 450px;
+            position: fixed; top: 0; left: 0; z-index: 1000;
+            width: 100%; max-width: 450px;
         }
 
-        header {
-            text-align: center;
-            margin-top: 200px; 
-            padding: 10px;
-        }
+        header { text-align: center; margin-top: 200px; padding: 10px; }
 
         #summer {
-            font-size: 4.0rem;
-            font-family: Poppins;
-            color: #FFD700;
-            margin: 0;
+            font-size: clamp(2rem, 8vw, 4rem);
+            font-family: Poppins; color: #FFD700; margin: 0;
             text-shadow: 0 0 15px rgba(0,0,0,1);
         }
 
-        /* MAIN LAYOUT - Now supports 3 columns on desktop */
         .main-content {
-            display: flex;
-            flex-direction: row; 
-            gap: 20px;
-            align-items: stretch;
-            justify-content: center;
-            max-width: 1200px;
-            margin: 80px auto 40px auto;
-            padding: 0 20px;
+            display: flex; flex-direction: row; gap: 20px;
+            align-items: stretch; justify-content: center;
+            max-width: 1200px; margin: 60px auto 40px auto; padding: 0 20px;
         }
 
         .park {
-            flex: 1.2;
-            position: relative;
-            border: 4px solid gold;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-            min-height: 300px;
+            flex: 1.2; position: relative; border: 4px solid gold;
+            border-radius: 12px; overflow: hidden; min-height: 300px;
         }
 
         .fade-img {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            object-fit: cover;
-            opacity: 0;
-            animation: imageCycle 24s infinite;
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover; opacity: 0; animation: imageCycle 24s infinite;
         }
 
+        /* Image Cycle Delays */
         .fade-img:nth-child(1) { animation-delay: 0s; }
         .fade-img:nth-child(2) { animation-delay: 4s; }
         .fade-img:nth-child(3) { animation-delay: 8s; }
@@ -109,178 +104,79 @@
         }
 
         .island {
-            flex: 1;
-            background: rgba(0, 0, 0, 0.9); 
-            backdrop-filter: blur(15px); 
-            padding: 30px;
-            border: 1px solid rgba(255, 215, 0, 0.3);
-            border-radius: 8px;
-            color: #fff;
-            overflow-y: auto; 
+            flex: 1; background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(15px);
+            padding: 30px; border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px; color: #fff; overflow-y: auto;
         }
 
         .island strong {
-            display: block;
-            color: #FFD700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-size: 1.3rem;
-            margin-bottom: 2px;
-            margin-top: 15px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            display: block; color: #FFD700; text-transform: uppercase;
+            font-size: 1.3rem; margin-top: 15px;
         }
 
-        .island p { 
-            margin-top: 0;
-            margin-bottom: 20px;
-            line-height: 1.4;
-            color: #ccc; 
-        }
-
-        /* NEW: Ticket Container as a side-by-side box */
         .ticket-container {
-            flex: 0.6;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.8);
-            border: 2px solid gold;
-            border-radius: 12px;
-            padding: 20px;
-            text-align: center;
+            flex: 0.6; display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            background: rgba(0, 0, 0, 0.8); border: 2px solid gold;
+            border-radius: 12px; padding: 20px; text-align: center;
         }
 
         .buy-button {
             background: linear-gradient(135deg, #FFD700, #FFA500);
-            color: #000;
-            padding: 15px 25px;
-            font-family: Gotham, sans-serif;
-            font-size: 1.1rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
+            color: #000; padding: 15px 25px; font-weight: bold;
+            border-radius: 50px; cursor: pointer; border: none;
             transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
         }
 
-        .buy-button:active { transform: scale(0.95); }
-        .buy-button:hover { box-shadow: 0 0 20px gold; }
-
-        #toast {
-            visibility: hidden;
-            min-width: 250px;
-            background-color: #28a745;
-            color: #fff;
-            text-align: center;
-            border-radius: 50px;
-            padding: 16px;
-            position: fixed;
-            z-index: 2000;
-            left: 50%;
-            bottom: 30px;
-            transform: translateX(-50%);
-        }
-
-        #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
-        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
-        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
-        
-        /* MOBILE RESPONSIVE RULES - FIXED FOR 1 PAGE VIEW */
+        /* MOBILE ADJUSTMENTS (Page 1 & 2) */
         @media (max-width: 768px) {
-            header { 
-                margin-top: 170px; /* Tightens space under music player */
-                padding: 5px; 
-            }
-            #summer { font-size: 1.5rem; }
-
+            header { margin-top: 170px; padding: 5px; }
             .main-content { 
-              flex-direction: column; 
-                margin-top: 8px; 
-                gap: 8px; 
-                padding: 0 15px;
-                box-sizing: border-box;  
+                flex-direction: column; margin-top: 8px; gap: 8px; 
+                padding: 0 15px; height: 65vh; overflow-y: auto; 
             }
-            .park, .island, .ticket-container {
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            .park { 
-                height: 185px; /* Increased height to fill more screen space */
-                min-height: 185px;
-                overflow-y: auto;
-            }
-            
-
-            .island { 
-                padding: 10px 15px; /* Tight padding */
-                height: 195px; /* FIXED HEIGHT TO PREVENT OVERSIZING */
-                max-height: 195px;
-                overflow-y: auto; /* Keeps text scrollable inside the box */
-                box-sizing: border-box;
-            }
-            
-            .island p { margin-bottom: 5px; font-size: 0.85rem; line-height: 1.2; }
-            .island strong { font-size: 1rem; margin-top: 5px; }
-
-            .ticket-container {
-               margin-top: 0;
-               padding: 12px;
-               border: 2px solid gold;
-               box-sizing: border-box;
-            }
-            
-            .buy-button { padding: 10px 20px; font-size: 0.95rem; }
-            .ticket-container p { display: none; } /* Removes extra text line */
+            .park { height: 185px; min-height: 185px; }
+            .island { height: 195px; padding: 15px; }
+            .ticket-container { margin-bottom: 20px; }
         }
 
-/* Star Animation Styling - High Visibility */
-   .star {
-            position: fixed;
-            top: -10px;
-            background-color: white;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999; /* Forces stars to the very front */
-            box-shadow: 0 0 8px 2px white; /* Stronger glow */
-            animation: fall linear infinite;
+        /* DESKTOP HEADER FIX */
+        @media screen and (min-width: 1025px) {
+            header { margin-top: 10px !important; }
+            h1 { margin-top: -50px !important; }
+        }
+
+        /* TOAST & STARS */
+        #toast {
+            visibility: hidden; min-width: 250px; background-color: #28a745;
+            color: #fff; text-align: center; border-radius: 50px;
+            padding: 16px; position: fixed; z-index: 10005;
+            left: 50%; bottom: 30px; transform: translateX(-50%);
+        }
+        #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+
+        .star {
+            position: fixed; top: -10px; background-color: white;
+            border-radius: 50%; pointer-events: none; z-index: 10004;
+            box-shadow: 0 0 8px 2px white; animation: fall linear infinite;
         }
 
         @keyframes fall {
             0% { transform: translateY(-5vh) scale(0.5); opacity: 0; }
             10% { opacity: 1; }
-            90% { opacity: 1; }
             100% { transform: translateY(105vh) scale(1.2); opacity: 0; }
-        }    
-      @media screen and (min-width: 1025px) {
-    /* 1. Remove all inner space from the top of the page */
-    header {
-        padding-top: 10 !important;
-        margin-top: 10!important;
-    }
-
-    /* 2. Pull the title UP toward the music player */
-    h1 {
-        font-size: 3.2rem !important; 
-        margin-top: -50px !important; /* This pulls it closer to the widget */
-        margin-bottom: -5px !important;
-    }
-
-    /* 3. Adjust boxes so they don't overlap the now-higher title */
-    .main-content { 
-        margin-top: 5px !important; /* Adjusted to sit under the higher h1 */
-        position: relative;
-        z-index: 10;
-    }
-}
-              
-
+        }
     </style>
 </head>
 <body>
+
+    <div id="maldives-splash">
+        <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg" alt="Maldives">
+        <div class="content">
+            <h2>MALDIVES</h2>
+            <p style="font-size: 1.2rem;">Begin Your Journey...</p>
+        </div>
+    </div>
 
     <video autoplay muted loop playsinline id="video-bg">
         <source src="https://assets.mixkit.co/videos/preview/mixkit-tropical-beach-with-palm-trees-1563-large.mp4" type="video/mp4">
@@ -289,7 +185,6 @@
     <div class="music-container">
         <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
             style="width:100%;max-width:550px;overflow:hidden;background:transparent;" 
-            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"  
             src="https://embed.music.apple.com/us/album/jamming/1469575763?i=1469576116&theme=dark">
         </iframe>
     </div>
@@ -300,12 +195,12 @@
 
     <div class="main-content">
         <div class="park"> 
-            <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img">
-            <img src="https://images.pexels.com/photos/1287441/pexels-photo-1287441.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img">
-            <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img">
-            <img src="https://images.pexels.com/photos/1618606/pexels-photo-1618606.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img">
-            <img src="https://images.pexels.com/photos/1544376/pexels-photo-1544376.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img"> 
-            <img src="https://images.pexels.com/photos/3320529/pexels-photo-3320529.jpeg?auto=compress&cs=tinysrgb&w=600" class="fade-img">          
+            <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg" class="fade-img">
+            <img src="https://images.pexels.com/photos/1287441/pexels-photo-1287441.jpeg" class="fade-img">
+            <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg" class="fade-img">
+            <img src="https://images.pexels.com/photos/1618606/pexels-photo-1618606.jpeg" class="fade-img">
+            <img src="https://images.pexels.com/photos/1544376/pexels-photo-1544376.jpeg" class="fade-img"> 
+            <img src="https://images.pexels.com/photos/3320529/pexels-photo-3320529.jpeg" class="fade-img">          
         </div>        
         
         <div class="island">   
@@ -323,35 +218,35 @@
     <div id="toast">✅ Ticket Reserved! See you in Paradise!</div>
 
     <script>
+        // Maldives Intro Timer Logic
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const splash = document.getElementById('maldives-splash');
+                splash.classList.add('hidden-splash');
+            }, 10000); // 10 seconds
+        });
+
         function showSuccess() {
             var x = document.getElementById("toast");
             x.className = "show";
-            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            setTimeout(function(){ x.className = ""; }, 3000);
         }
-    </script>
-<script>
- function createStars() {
+
+        function createStars() {
             const body = document.body;
-            for (let i = 0; i < 60; i++) { // Increased count to 60
+            for (let i = 0; i < 60; i++) {
                 const star = document.createElement('div');
                 star.className = 'star';
-                
-                // Randomize size between 3px and 6px for visibility
                 const sizeValue = Math.random() * 3 + 3; 
                 star.style.width = sizeValue + 'px';
                 star.style.height = sizeValue + 'px';
-                
                 star.style.left = Math.random() * 100 + 'vw';
                 star.style.animationDuration = (Math.random() * 4 + 4) + 's';
                 star.style.animationDelay = (Math.random() * 10) + 's';
-
                 body.appendChild(star);
             }
         }
         createStars();    
     </script>
-
-
-
 </body>
 </html>
