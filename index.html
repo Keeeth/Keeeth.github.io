@@ -141,10 +141,16 @@
                 padding: 0 15px; height: 62vh; overflow-y: auto; 
             }
             .park { height: 170px; min-height: 170px; }
-            .island { height: 160px; padding: 12px; }
+            .island { height: auto !important; 
+             min-height: 160px !important; /* Forces the box to stay a decent size */
+             max-height: 200px !important; /* Prevents it from taking over the whole screen */
+             overflow-y: auto !important;
+             padding: 15px !important;
+
+            }
             .ticket-container { min-height:  110 !important; 
-             margin-top: 35px !important; /* This pushes the container down away from the text */
-             margin-bottom: 40px !important; /* Gives space at the very bottom of the scroll */          
+             margin-top: 45px !important; /* This pushes the container down away from the text */
+             margin-bottom: 50px !important; /* Gives space at the very bottom of the scroll */          
              padding: 15px !important;             
              display: flex;
              flex-direction: column;
@@ -152,6 +158,7 @@
              align-items: center;          /* Centers button horizontally */
             
             }
+            
             .buy-button { 
              padding: 10px 20px !important; /* Slightly slimmer padding for mobile */
              font-size: 0.9rem !important; 
