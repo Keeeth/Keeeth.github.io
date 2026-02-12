@@ -88,8 +88,15 @@
         }
 
         .fade-img {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            object-fit: cover; opacity: 0; animation: imageCycle 24s infinite;
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           opacity: 0; /* Keeps them hidden until their turn */
+           animation: imageCycle 28s linear infinite;
+           animation-fill-mode: both;
         }
 
         /* Image Cycle Delays */
@@ -104,8 +111,8 @@
         @keyframes imageCycle {
            0% { opacity: 0; } /* Fade in starts immediately */                            
            2% { opacity: 1; }   /* Stay fully visible for the majority of the 14.28% slot */                               
-           14% { opacity: 1; } /* Fade out finishes at the start of the next image's delay */                                  
-           16% { opacity: 0; } 
+           14.28% { opacity: 1; } /* Fade out finishes at the start of the next image's delay */                                  
+           16.28% { opacity: 0; } 
            100% { opacity: 0; }
         }
 
