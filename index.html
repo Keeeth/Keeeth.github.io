@@ -102,11 +102,11 @@
         .fade-img:nth-child(7) { animation-delay: 24s; } /* New 7th delay */
 
         @keyframes imageCycle {
-            0% { opacity: 0; }
-            2% { opacity: 1; }    /* Fade in quickly */
-            14.2% { opacity: 1; } /* Stay fully visible for 4 seconds */
-            16.2% { opacity: 0; } /* Fade out */
-            100% { opacity: 0; }
+           0% { opacity: 0; } /* Fade in starts immediately */                            
+           2% { opacity: 1; }   /* Stay fully visible for the majority of the 14.28% slot */                               
+           14.28% { opacity: 1; } /* Fade out finishes at the start of the next image's delay */                                  
+           16.28% { opacity: 0; } 
+           100% { opacity: 0; }
         }
 
         .island {
