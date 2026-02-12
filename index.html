@@ -99,12 +99,13 @@
         .fade-img:nth-child(4) { animation-delay: 12s; }
         .fade-img:nth-child(5) { animation-delay: 16s; }
         .fade-img:nth-child(6) { animation-delay: 20s; }
+        .fade-img:nth-child(7) { animation-delay: 24s; } /* New 7th delay */
 
         @keyframes imageCycle {
             0% { opacity: 0; }
-            5% { opacity: 1; }
-            16% { opacity: 1; }
-            21% { opacity: 0; }
+            2% { opacity: 1; }    /* Fade in quickly */
+            14.2% { opacity: 1; } /* Stay fully visible for 4 seconds */
+            16.2% { opacity: 0; } /* Fade out */
             100% { opacity: 0; }
         }
 
@@ -257,7 +258,9 @@
             <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg" class="fade-img">
             <img src="https://images.pexels.com/photos/1618606/pexels-photo-1618606.jpeg" class="fade-img">
             <img src="https://images.pexels.com/photos/1544376/pexels-photo-1544376.jpeg" class="fade-img"> 
-            <img src="https://images.pexels.com/photos/3320529/pexels-photo-3320529.jpeg" class="fade-img">          
+            <img src="https://images.pexels.com/photos/3320529/pexels-photo-3320529.jpeg" class="fade-img"> 
+            <img src="https://images.pexels.com/photos/4606064/pexels-photo-4606064.jpeg" class="fade-img"> 
+                              
         </div>        
         
         <div class="island">   
