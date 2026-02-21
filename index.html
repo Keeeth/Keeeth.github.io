@@ -67,8 +67,11 @@
 
        header { 
            text-align: center; 
-           margin-top: 350px; /* Increased from 240px */
+           margin-top: 300px; /* Increased from 240px */
            padding: 10px;
+           /*This ensures header stays below fixed nav*/
+           position: relative;
+           z-index: 1;
 }
         #summer {
             font-size: 1.5rem;
