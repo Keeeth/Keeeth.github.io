@@ -143,6 +143,35 @@
             border-radius: 50px; cursor: pointer; border: none;
             transition: transform 0.2s, box-shadow 0.2s;
         }
+       .top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8); /* Dark background to match your theme */
+    border-bottom: 2px solid #FFD700; /* Signature Gold */
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001; /* Higher than music (1000) but lower than splash (10002) */
+}
+.nav-item {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #FFD700;
+}
+
 
         /* MOBILE ADJUSTMENTS (Page 1 & 2) */
         @media (max-width: 768px) {
@@ -245,6 +274,11 @@
 
         </div>
     </div>
+     <nav class="top-nav">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About Us</a>
+        <a href="destinations.html" class="nav-item">Destinations</a>
+    </nav>
 
     <video autoplay muted loop playsinline id="video-bg">
         <source src="https://assets.mixkit.co/videos/preview/mixkit-tropical-beach-with-palm-trees-1563-large.mp4" type="video/mp4">
