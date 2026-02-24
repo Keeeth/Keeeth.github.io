@@ -145,7 +145,8 @@
         }
        .top-nav {
     width: 100%;
-    list-style: none;
+    list-style-type: none !important; /* Ensures no default bullets */
+    list-style: none !important; /* Backup for different browsers
     display: flex;
     justify-content: center;
     background: rgba(0, 0, 0, 0.8); /* Dark background to match your theme */
