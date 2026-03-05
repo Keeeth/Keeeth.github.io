@@ -334,17 +334,21 @@
         <p><strong>Let's Connect</strong><br>
         Reach out via the form for feedback or professional inquiries in the Baltimore area.</p>
     </div>
-
-    <div class="ticket-container">
-        <h3 style="color: gold; margin-bottom: 15px;">FEEDBACK</h3>
-        <form action="https://formspree.io/f/your-id" method="POST" style="width: 100%; display: flex; flex-direction: column; gap: 10px;">
-            <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border-radius: 5px; border: 1px solid gold; background: rgba(0,0,0,0.5); color: white;">
-            <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border-radius: 5px; border: 1px solid gold; background: rgba(0,0,0,0.5); color: white;">
-            <textarea name="message" placeholder="Message..." required style="padding: 10px; border-radius: 5px; border: 1px solid gold; background: rgba(0,0,0,0.5); color: white; height: 80px; resize: none;"></textarea>
-            <button type="submit" class="buy-button">SEND MESSAGE</button>
-        </form>
-    </div>
-</div>
+<div class="ticket-container">
+    <h3 style="color: gold; margin-bottom: 15px;">FEEDBACK</h3>
+    
+    <form action="https://formspree.io/f/your-id" method="POST" style="width: 100%; display: flex; flex-direction: column; gap: 10px;">
+        <input type="text" name="name" placeholder="Your Name" required 
+               style="padding: 10px; border-radius: 5px; border: 1px solid gold; background: rgba(0,0,0,0.5); color: white;">
+        
+        <input type="email" name="email" placeholder="Your Email" required 
+               style="padding: 10px; border-radius: 5px; border: 1px solid gold; background: rgba(0,0,0,0.5); color: white;">
+        
+        <textarea name="message" placeholder="Message..." required 
+                  style="padding: 10px; border-radius: 5px; border: 1px solid gold; background: rgba(0,0,0,0.5); color: white; height: 80px; resize: none;"></textarea>
+        
+        <button type="submit" class="buy-button" onclick="showSuccess()">SEND MESSAGE</button>
+     </form> </div>
   
 
     <div id="toast">✅ Ticket Reserved! See you in Paradise!</div>
