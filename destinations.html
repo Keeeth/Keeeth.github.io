@@ -201,41 +201,48 @@
     color: #fff;
     text-shadow: 0 0 10px #FFD700;
 }
-
-        
-       /* MOBILE ADJUSTMENTS */
+/* MOBILE ADJUSTMENTS */
 @media (max-width: 768px) {
-    /* Hides the Apple Music player to save space on phones */
+    /* Hides the music player to save vertical space */
     .music-container { 
         display: none !important; 
     }
 
-    /* Allows the page to scroll naturally */
-    html, body { 
-        overflow-y: auto !important; 
-        position: relative !important; 
-        height: auto !important;
-    }
-
+    /* Moves the header down so it doesn't hide behind the nav bar */
     header { 
-        margin-top: 100px !important; /* Moves title up since music is gone */
+        margin-top: 100px !important; 
         padding: 10px; 
     }
 
+    /* Forces items to stack vertically on phones */
     .main-content { 
+        display: flex;
         flex-direction: column; 
-        margin-top: 10px !important; 
-        gap: 15px; 
-        padding: 0 15px; 
+        margin-top: 20px !important; 
+        gap: 20px; 
+        padding: 0 15px 40px 15px; 
         height: auto !important; 
+        overflow-y: visible !important;
     }
 
-    .park { height: 200px !important; min-height: 200px !important; }
-    .island { height: auto !important; padding: 15px !important; }
-    .ticket-container { height: auto !important; padding: 20px !important; margin-bottom: 40px; }
+    /* Gives the Feedback box internal breathing room */
+    .ticket-container {
+        padding: 40px 20px !important;
+        margin-top: 10px;
+        border: 2px solid gold;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Ensures the FEEDBACK title is visible and spaced correctly */
+    .ticket-container h3 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        display: block !important;
+    }
 }
-
-
+        
+     
      /* REFINED DESKTOP Adjustments */
      @media screen and (min-width: 1025px) {
     /* 1. Fixes the Header to a specific distance from the top */
