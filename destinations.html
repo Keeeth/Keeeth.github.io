@@ -202,11 +202,19 @@
     text-shadow: 0 0 10px #FFD700;
 }
 
-
         
        /* MOBILE ADJUSTMENTS */
 
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
+    /* UNLOCK SCROLLING FOR MOBILE */
+    html, body { 
+        overflow-y: auto !important; 
+        position: relative !important; 
+        height: auto !important;
+    }
+
+
     .music-container { 
         display: none !important; 
     }
