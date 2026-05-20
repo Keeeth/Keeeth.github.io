@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SveCdOBbX+s=",
+  "success": true,
+  "projectFilePath": "/Users/keithpontlitz/Documents/Projects/Keeeth.github.io/Keeeth.github.io-1/MyNewApp/MyNewApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/keithpontlitz/.nuget/packages/pastel/7.0.1/pastel.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

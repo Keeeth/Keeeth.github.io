@@ -1,0 +1,5 @@
+canoli shells | 9 | 1
+mascarpone cheese | 35 | 2
+Bag of sugar | 30 | 1
+Caputo flour | 5.99 | 6
+Baby Arugula | 6.99 | 4

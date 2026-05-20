@@ -3,7 +3,7 @@
 Technical professional with **4 years of hands-on IT experience** and a background in **Oracle MICROS Simphony** implementation and support.
 
 ### 🚀 Recent Milestone
-* **Web Development Capstone:** Earned an **86% grade** on a responsive travel web application.
+* **Web Development Capstone:** Earned a credential on a responsive travel web application.
 * **Live Project:** [View my Tour Adventure Site](https://keeeth.github.io/).
 
 ### 🛠 Tech Stack & Tools
@@ -17,4 +17,4 @@ Technical professional with **4 years of hands-on IT experience** and a backgrou
 
 ### 📫 Let's Connect
 * 📍 Based in **Columbia, Maryland**.
-* 💼 [LinkedIn Profile](Your-Link-Here)
+* 💼 [LinkedIn Profile](https://www.linkedin.com/in/keith-pontlitz-26a3a3126/)
